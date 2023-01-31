@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructors</title>
+</head>
+
+<body>
+    <script>
+        let student1 = {
+            Fname: "Raj",
+            Lname: "Sathe",
+            age: 21,
+            address: "Haldi",
+            qualification: "2nd Year Complete"
+        }
+        console.log(student1);
+
+        let student2 = {
+            Fname: "Raj",
+            Lname: "Sathe",
+            age: 21,
+            address: "Haldi",
+            qualification: "2nd Year Complete"
+        }
+        console.log(student2);
+
+        let student3 = {
+            Fname: "Raj",
+            Lname: "Sathe",
+            age: 21,
+            address: "Haldi",
+            qualification: "2nd Year Complete"
+        }
+        console.log(student3);
+
+
+
+
+        // make sure that while using constructor, function name's first letter will be in  uppercase
+
+        function Person(fname, lname, age, qualification, address, company) {
+            this.Fname = fname;
+            this.Lname = lname;
+            this.Age = age;
+            this.Qualification = qualification;
+            this.Address = address;
+            this.Company = company;
+        }
+        let a = new Person("RAJ", "SATHE", 21, "2nd year completed", "Haldi", "TCS");
+        console.log(a);
+        let b = new Person("RAJ", "SATHE", 21, "2nd year completed", "Haldi", "TCS");
+        console.log(b);
+        b.department = "BCS";
+
+        b.fullname = function () {
+            return this.Fname + " " + this.Lname;
+        }
+        console.log(b.fullname());
+
+
+        function Rushi(name, lname, age, qualification, address) {
+            this.Name = name;
+            this.Lname = lname;
+            this.Age = age;
+            this.Qualification = qualification;
+            this.Address = address;
+        }
+        let x = new Rushi("Rushi", "Khataki", 24, "Graduate", "Sadoli");
+        console.log(x);
+
+        let y = new Rushi("Rushi", "Khataki", 24, "Graduate", "Sadoli");
+        console.log(y);
+        y.gf = "Pranali";
+
+        y.fullname = function () {
+            return this.Name + " " + this.gf;
+        }
+        console.log(y.fullname());
+
+
+        function Vivek(name, lname, age, address, education) {
+            this.Name = name;
+            this.Lname = lname;
+            this.Age = age;
+            this.Address = address;
+            this.Education = education;
+        }
+        let i = new Vivek("Vivek", "Sutar", 25, "Mharul", "12th");
+        console.log(i);
+
+        let j = new Vivek("Vivek", "Sutar", 25, "Mharul", "12th");
+        console.log(j);
+        j.girlfriend = "Amruta";
+        j.girlfriend = "Sharvari";
+
+        j.fullname = function () {
+            return this.Name + ":  1-" + this.girlfriend + " 2-" + this.girlfriend2;
+        }
+        console.log(j.fullname());
+    </script>
+</body>
+
+</html>

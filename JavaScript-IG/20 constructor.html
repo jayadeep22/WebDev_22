@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let person = {
+        //                 firstname:"rahul",
+        //                 lastname:"tripati",
+        //                 age:25,
+        //                 city:"kolhapur",
+        //                 country:"indian",
+        //                 sports:"cricket",
+        //                 education:"BE"
+        //             }
+
+        //             console.log(person);
+
+        //             let person1 = {
+        //                 firstname:"rashmika",
+        //                 lastname:"patil",
+        //                 age:28,
+        //                 city:"sangali",
+        //                 country:"indian",
+        //                 sports:"football",
+        //                 education:"ME"
+        //             }
+
+        //             console.log(person1);
+
+                    
+                function Person(first,last,age,city,country,sports,education){
+                    this.firstname = first;
+                    this.lastname = last;
+                    this.age = age;
+                    this.city = city;
+                    this.country = country;
+                    this.sports = sports;
+                    this.education = education;
+                }
+
+                let x = new Person("rahul","tripati",25,"kolhapur","indian","cricket","ME");
+                let y = new Person("rohit","pati",26,"solapur","india","football","BE");
+                console.log(x);
+                console.log(y);
+
+                x.gender = "male";
+                console.log(x);
+
+                y.language = "english";
+                console.log(y);
+
+                x.fullname = function(){
+                    return this.firstname + " " + this.lastname;
+                }
+                console.log(x.fullname());
+
+                y.name = function(){
+                    return this.age + " " + this.sports;
+                }
+                console.log(y.name());
+
+
+
+
+    </script>
+</body>
+</html>

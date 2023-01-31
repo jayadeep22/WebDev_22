@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #main {
+            text-align: center;
+        }
+
+        #inp1 {
+            width: 300px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 15px;
+        }
+
+        #buttons {
+            padding: 5px;
+        }
+
+        #btns1 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns2 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns3 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns4 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns5 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns6 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns7 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns8 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns9 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns10 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns11 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns12 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns13 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns14 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns15 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns16 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns17 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns18 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #btns19 {
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgb(84, 84, 224);
+            border: 1px solid;
+        }
+
+        #btns20 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #inp2 {
+            width: 200px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        #inp3{
+            width: 200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Calculator</h1>
+
+        <div>
+            <input type="text" id="inp3"><br><br>
+            <input type="text" id="inp1" readonly="true"><br>
+
+            <div id="buttons">
+                <button id="btns1">(</button>
+                <button id="btns2">)</button>
+                <button id="btns3">%</button>
+                <button id="btns4">/</button><br><br>
+
+                <button id="btns5" onclick="btn(this)">7</button>
+                <button id="btns6" onclick="btn(this)">8</button>
+                <button id="btns7" onclick="btn(this)">9</button>
+                <button id="btns8">/</button><br><br>
+
+                <button id="btns9" onclick="btn(this)">4</button>
+                <button id="btns10" onclick="btn(this)">5</button>
+                <button id="btns11" onclick="btn(this)">6</button>
+                <button id="btns12">*</button><br><br>
+
+                <button id="btns13" onclick="btn(this)">1</button>
+                <button id="btns14" onclick="btn(this)">2</button>
+                <button id="btns15" onclick="btn(this)">3</button>
+                <button id="btns16">-</button><br><br>
+
+                <button id="btns17" onclick="btn(this)">0</button>
+                <button id="btns18" onclick="btn(this)">.</button>
+                <button id="btns19" onclick="calculate()">=</button>
+                <button id="btns20" onclick="operation()">+</button><br><br>
+
+                <button id="btn21" onclick="clearone()">Bakcspace</button>
+                <button id="btn22" onclick="clearall()">All Clear</button>
+            </div>
+
+            <input type="text" id="inp2" placeholder="Answer is">
+
+        </div>
+    </div>
+
+
+    <script>
+        let operator = "";
+        function btn(ctrl) {
+            let textbox = document.getElementById("inp1");
+            let value = textbox.value;
+            if(ctrl.innerText == "."){
+                if(value.indexOf(".")!= -1)
+                return;
+            }
+            let number = value + ctrl.innerText;
+            textbox.value = number;
+        }
+
+        function clearall() {
+            let textbox = document.getElementById("inp1");
+            textbox.value = "";
+        }
+
+        function clearone() {
+            let textbox = document.getElementById("inp1");
+            let text = textbox.value;
+            let length = text.length;
+            if (length > 0) {
+                let newtext = text.slice(0, length - 1);
+                textbox.value = newtext;
+            }
+        }
+
+        function operation(){
+            let textbox = document.getElementById("inp1");
+            let inp3 = document.getElementById("inp3");
+            inp3.value = textbox.value;
+            textbox.value = "";
+
+            operator = ctrl.innerText;
+        }
+
+        function calculate(){
+            let textbox = document.getElementById("inp1");
+            let inp3 = document.getElementById("inp3");
+
+            let no1 = Number(inp3.value);
+            let no2 = Number(textbox.value);
+
+            let answer = 0;
+
+            if(operator == "+"){
+                answer = no1 + no2;
+            }
+            textbox.value = answer;
+
+        }
+    </script>
+</body>
+
+</html>

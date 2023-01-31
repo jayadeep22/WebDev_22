@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Iteration</title>
+</head>
+<body>
+    <script>
+        // print all positions of elements
+        let a = [50,40,30,80,70,95,85,74];
+            console.log(a);
+
+            // sort the array
+                let b = a.sort();
+                console.log(b);
+
+                for(i=0;i<a.length;i++){
+                    console.log("position " + i + " - " + b[i]);
+                }
+
+            // for each method print index and value
+                console.log("---for each method to print index and value---");
+                b.forEach(function(value,index){ 
+                    console.log(index,value);
+                })
+            // for each method print value and index
+                console.log("---for each method to print value and index---");
+                    b.forEach(function(value,index){
+                        console.log(value,index);
+                    })
+
+            // arrow method
+                    console.log("---arrow method---");
+                    b.forEach((value,index)=>{
+                        console.log(index,value);
+                    })
+
+            // to print array line by line
+                console.log("---prints array elements line by line---");
+                        for(j=0;j<b.length;j++){
+                            console.log(b[j]);
+                        }
+
+        // map method
+        let c = [35,45,55,68,78,90,40,50];
+
+            console.log("---map method (doubles the array)---");
+                        let d = c.map(function(value,index){
+                            return value*2;
+                        })
+                        console.log(d);
+
+                        console.log("---map method (five times the array)---");
+                        let e = c.map((value,index)=>{
+                            return value*5;
+                        })
+                        console.log(e);
+
+        // map method example 2
+        let f = [15,75,85,95,65,45,55];
+            console.log("---map method (doubles the array)---");
+                        let g = f.map(function(value,index){
+                            return value*3;
+                        })
+                        console.log(g);
+
+            // filter method
+            console.log("---Filter method using arrow method (value above 45)---");
+            let h = f.filter((value,index)=>{
+                return value >=45;
+            })
+            console.log(h);
+
+            // filter method example 2
+            console.log("---Filter method using function method (value above 50)---");
+            let k = f.filter(function(value,index){
+                return value>50;
+            })
+            console.log(k);
+
+        // reduce method
+        let no2 = [54,2,165,85,45,12,79,32,25,1];
+            console.log(no2);
+
+            let m = no2.reduce(function(value,index){
+                return value + index;
+            })
+            console.log(m);
+            
+  
+    </script>
+</body>
+</html>

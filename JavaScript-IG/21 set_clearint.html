@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+
+
+    <script>
+        let a = 0;
+       let name =  setInterval(anim,2000);
+        function anim(){
+            // console.log("welcome");
+
+            a = a + 10;
+            // console.log(a);
+
+            if(a==60)
+            {
+                clearInterval(name);
+            }
+            else
+            {
+                let target = document.getElementById("test");
+            target.style.marginLeft = a + "px";
+            }
+
+           
+
+
+        }
+    </script>
+</body>
+</html>

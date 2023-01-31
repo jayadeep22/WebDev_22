@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let student = {
+        //     name:"avinash",
+        //     rollno:25,
+        //     sub:"english",
+        //     city:"kolhapur",
+        //     uni:"shivaji university"
+        // }
+        // console.log(student);
+        // let student1 = {
+        //     name:"avinash",
+        //     rollno:25,
+        //     sub:"english",
+        //     city:"kolhapur",
+        //     uni:"shivaji university"
+        // }
+        // console.log(student1);
+
+        function Employee(first,last,age,designation,salary,company){
+            this.firstname = first;
+            this.lastname = last;
+            this.age = age;
+            this.designation = designation;
+            this.salary = salary;
+            this.company = company;
+
+        }
+        let x = new Employee("sandip","patil",25,"HOD",25000,"TCS");
+        console.log(x);
+        let y = new Employee("parth","gurav",28,"trainee",15000,"igap");
+        console.log(y);
+        y.department = "human resourcess";
+
+        x.fullname = function(){
+            return this.firstname + " " + this.lastname;
+        }
+        console.log(x.fullname());
+
+    </script>
+</body>
+</html>

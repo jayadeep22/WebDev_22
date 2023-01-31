@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area</title>
+</head>
+
+<body>
+    <input type="text" value="" id="value1" placeholder="height">
+    <input type="text" value="" id="value2" placeholder="width">
+    <button onclick="calc()">Calculate</button><br>
+    <h3 id="para1"></h3>
+
+
+    <input type="text" value="" id="value3" placeholder="radius">
+    <button onclick="calculate()">Calculate</button><br>
+    <h3 id="para2"></h3>
+
+
+    <script>
+        function calc() {
+            let height = document.getElementById("value1").value;
+            let width = document.getElementById("value2").value;
+            let area = height * width;
+            document.getElementById("para1").innerText = "Area is: " + area;
+        }
+
+
+        function calculate() {
+            let r = document.getElementById("value3").value;
+            let area = 3.14 * r * r;
+            document.getElementById("para2").innerText = "Area of Circle is : " + area;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

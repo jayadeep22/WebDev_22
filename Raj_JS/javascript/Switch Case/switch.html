@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+
+<body>
+    <h3 id="demo6"></h3>
+    <h3 id="demo7"></h3>
+    <h3 id="demo8"></h3>
+    <h3 id="demo9"></h3>
+    <h3 id="demo10"></h3>
+
+
+    <script>
+        // let day = parseInt(prompt("Enter a day number between 1 to 7:"));
+
+        // switch (day) {
+        //     case 1:
+        //         document.getElementById("demo6").innerHTML = "Monday";
+        //         break;
+
+        //     case 2:
+        //         document.getElementById("demo6").innerHTML = "Tuesday";
+        //         break;
+
+        //     case 3:
+        //         document.getElementById("demo6").innerHTML = "Wednesday";
+        //         break;
+
+        //     case 4:
+        //         document.getElementById("demo6").innerHTML = "Thursday";
+        //         break;
+
+        //     case 5:
+        //         document.getElementById("demo6").innerHTML = "Friday";
+        //         break;
+
+        //     case 6:
+        //         document.getElementById("demo6").innerHTML = "Saturday";
+        //         break;
+
+        //     case 7:
+        //         document.getElementById("demo6").innerHTML = "Sunday";
+        //         break;
+
+        //     default:
+        //         document.getElementById("demo6").innerHTML = "Enter Valid Number Between 1 to 7";
+        //         break;
+        // }
+
+
+
+        //    program for a simple calculator
+        let result;
+
+        // take the operator input
+        const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+        // take the operand input
+        const number1 = parseFloat(prompt('Enter first number: '));
+        const number2 = parseFloat(prompt('Enter second number: '));
+
+        switch (operator) {
+            case '+':
+                result = number1 + number2;
+                document.write(`${number1} + ${number2} = ${result}`);
+                break;
+            case '-':
+                result = number1 - number2;
+                document.write(`${number1} - ${number2} = ${result}`);
+                break;
+            case '*':
+                result = number1 * number2;
+                document.write(`${number1} * ${number2} = ${result}`);
+                break;
+            case '/':
+                result = number1 / number2;
+                document.write(`${number1} / ${number2} = ${result}`);
+                break;
+
+            default:
+                document.write('Invalid operator');
+                break;
+        }
+    </script>
+</body>
+
+</html>

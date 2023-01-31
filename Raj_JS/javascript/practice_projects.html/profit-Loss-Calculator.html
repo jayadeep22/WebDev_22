@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit or Loss</title>
+</head>
+
+<body>
+    <!-- <button onclick="profit()">Calculate</button> -->
+    <h3 id="demo1"></h3>
+    <h3 id="demo2"></h3>
+
+    <script>
+
+
+
+        function profit(CP, SP) {
+
+            let x = Number(prompt("enter CP"));
+            let y = Number(prompt("enter SP"));
+            // let x = alert("enter CP");
+            // console.log(x);
+
+
+            if (x > y) {
+                let loss = x - y;
+                // console.log("loss: " + loss);
+                document.getElementById("demo1").innerHTML = "loss: " + loss;
+
+                let loss1 = (loss / x) * 100;
+                // let loss2 = loss1.substr(4);
+                // console.log("loss Percentage is: " + loss1 + "%");
+                document.getElementById("demo2").innerHTML = "loss Percentage is: " + loss1 + "%";
+            }
+            else {
+                let profit = y - x;
+                // console.log("profit: " + profit);
+                document.getElementById("demo1").innerHTML = "profit: " + profit;
+
+                let profit1 = (profit / y) * 100;
+                // let profit2 = profit1.substr(4);
+                // console.log("profit percentage is: " + profit2 + "%");
+                document.getElementById("demo2").innerHTML = "profit percentage is: " + profit1 + "%";
+            }
+
+        }
+        profit();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rough Work</title>
+</head>
+
+<body>
+    <h1 id="demo4" style="text-align: center;"></h1>
+    <h5 id="demo5" style="text-align: center;"></h5>
+    <h3 id="demo1"></h3>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+
+
+    <!-- function practice work -->
+    <script>
+        function multiply(a, b) {
+            return a * b;
+        }
+        let c = multiply(50, 3);
+        console.log("(multiplication) c = " + c);
+
+
+        function divide(x, y) {
+            return x / y;
+        }
+        var z = divide(2000, 5);
+        console.log("(division) z = " + z);
+
+
+        // area of triangle
+        function areaofTriangle(b, h) {
+            return 1 / 2 * b * h;
+        }
+        let a = areaofTriangle(15, 25);
+        console.log("area of triangle = " + a + " cm");
+
+
+        // area of circle
+        function areaofcircle(pie, r) {
+            return pie * r * r;
+        }
+        var raj = areaofcircle(3.14, 5);
+        console.log("area of circle = " + raj);
+
+        // area of rectangle
+        function areaofrectangle(height, width) {
+            return (height * height) + (width * width);
+        }
+        var arearect = areaofrectangle(6, 8);
+        console.log("area of rectangle is : " + arearect);
+        document.getElementById("demo1").innerHTML = "Area of Rectangle = " + arearect;
+
+
+
+
+    </script>
+
+
+    <!-- object practice work -->
+    <script>
+        let company1 = { name: 'Rolex', workers: '150', time: 'full' }
+        console.log(company1);
+
+        let company2 = { name: 'Rolex', workers: '150', time: 'full' }
+        console.log("Name: " + company2.name + " " + "< Time: " + company2.time);
+
+        let Student1 = { name: 'Raj', age: '21', address: 'Haldi', qualification: '12th' }
+        console.log("Name: " + Student1.name + " < Address: " + Student1.address);
+
+
+        let Student2 = {
+            name: 'Raj', age: '21', address: 'Haldi', qualification: '12th',
+
+            Name: function () {
+                return Student2.qualification;
+            }
+        };
+        // document.getElementById("demo3").innerHTML = Student2.Name();
+
+
+        let car = {
+            model: 2002, name: 'alto', seats: 4, insurance: '5years',
+
+            info: function () {
+                return car.name;
+            }
+        };
+        console.log(car.info());
+
+    </script>
+
+    <script>
+        let m = [50, 1, 90, -40, 5, 0.9];
+        console.log(m);
+        console.log(typeof (m));
+
+        let abc = Math.floor(Math.random() * 100);
+        console.log("random value : " + abc);
+        let abcd = abc >= 50 ? "You are right Bro" : "Better luck next Time";
+        console.log("answer : " + abcd);
+
+        let xyz = 60;
+        var xy = xyz > 50 ? "Big" : "Small";
+        console.log(xy);
+
+
+
+        let hour = prompt("Enter Time: ");
+        console.log(hour);
+
+        if (hour >= 6 && hour < 12) {
+            console.log("Good Morning");
+            document.getElementById("demo4").innerHTML = "Good Morning";
+        } else if (hour >= 12 && hour < 18) {
+            console.log("Good Evening");
+            document.getElementById("demo4").innerHTML = "Good Evening";
+        } else if (hour >= 18 && hour < 24) {
+            console.log("Good Night");
+            document.getElementById("demo4").innerHTML = "Good Night";
+        } else if (hour >= 1 && hour < 6) {
+            console.log("Good Afternoon");
+            document.getElementById("demo4").innerHTML = "Good Afternoon";
+        } else {
+            console.log("Please Enter Valid Time");
+            document.getElementById("demo5").innerHTML = "Warning :- Enter Valid Time Between 1 to 24";
+        }
+
+
+
+
+        // program to find the sum of positive numbers
+        // if the user enters a negative numbers, the loop ends
+        // the negative number entered is not added to sum
+
+        let sum = 0;
+
+        // take input from the user
+        let number = parseInt(prompt('Enter a number: '));
+
+        while (number >= 0) {
+
+            // add all positive numbers
+            sum += number;
+
+            // take input again if the number is positive
+            number = parseInt(prompt('Enter a number: '));
+        }
+
+        // display the sum
+        document.write(`The sum is ${sum}.`);
+    </script>
+
+
+
+</body>
+
+</html>

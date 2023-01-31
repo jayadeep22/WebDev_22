@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation3</title>
+
+    <style>
+        #bigdiv {
+            height: 500px;
+            width: 500px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        #smalldiv1 {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: chocolate;
+            position: absolute;
+        }
+
+        #smalldiv2 {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: aqua;
+            position: absolute;
+            bottom: 0;
+        }
+
+        #smalldiv3 {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: crimson;
+            position: absolute;
+            right: 0;
+        }
+
+        #smalldiv4 {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: green;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        #sp1{
+            /* padding-left: 24px;
+            padding-top: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sp2{
+            /* padding-left: 22px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sp3{
+            /* padding-left: 22px; */
+            /* padding-top: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sp4{
+            /* padding-left: 22px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bigdiv">
+        <div id="smalldiv1"><p id="sp1">P</p></div>
+        <div id="smalldiv2"><p id="sp2">G</p></div>
+        <div id="smalldiv3"><p id="sp3">A</p></div>
+        <div id="smalldiv4"><p id="sp4">I</p></div>
+    </div>
+
+    <button onclick="move()">Click To Move</button>
+
+
+    <script>
+        function move() {
+
+            let pos1 = 440;
+            let a = setInterval(anim1, 5);
+            function anim1() {
+                if (pos1 == 200) {
+                    clearInterval(a);
+                }
+                else {
+                    pos1--;
+                    let w = document.getElementById("smalldiv1");
+                    w.style.bottom = pos1 + "px";
+                    w.style.right = pos1 + "px";
+                }
+            }
+
+
+            let pos2 = 440;
+            let b = setInterval(anim2, 10);
+            function anim2() {
+                if (pos2 == 195) {
+                    clearInterval(b);
+                }
+                else {
+                    pos2--;
+                    let x = document.getElementById("smalldiv2");
+                    x.style.top = pos2 + "px";
+                    x.style.right = pos2 + "px";
+                }
+            }
+
+            let pos3 = 440;
+            let c = setInterval(anim3, 15);
+            function anim3() {
+                if (pos3 == 200) {
+                    clearInterval(c);
+                }
+                else {
+                    pos3--;
+                    let y = document.getElementById("smalldiv3");
+                    y.style.bottom = pos3 + "px";
+                    y.style.left = pos3 + "px";
+                }
+            }
+
+            let pos4 = 440;
+            let d = setInterval(anim4, 17);
+            function anim4() {
+                if (pos4 == 195) {
+                    clearInterval(d);
+                }
+                else {
+                    pos4--;
+                    let z = document.getElementById("smalldiv4");
+                    z.style.top = pos4 + "px";
+                    z.style.left = pos4 + "px";
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

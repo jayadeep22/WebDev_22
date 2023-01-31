@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            display: flex;
+            color: black;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            font-size: 100px;
+            border-radius: 50%;
+            background-color: yellow;
+            width: 400px;
+            margin: auto ;
+            margin-top: 200px;
+          
+        }
+    </style>
+</head>
+   <div id="demo"></div>
+
+    <script>
+       setInterval(anim,1000);
+       function anim(){
+        let d = new Date();
+        document.getElementById("demo").innerHTML =
+   
+      d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+    
+       }
+    </script>
+</body>
+</html>

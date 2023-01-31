@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays.....</title>
+</head>
+<body>
+    <button onclick="f1()" onfocus="focus1()">Click 1</button>
+    <button onclick="f2()" onfocus="focus2()">Click 2</button>
+    <button onclick="f3()" onfocus="focus3()">Click 3</button>
+    <button onclick="f4()" onfocus="focus4()">Click 4</button>
+    <button onclick="f5()" onfocus="focus5()">Click 5</button>
+    <button onclick="f6()" onfocus="focus6()">Click 6</button>
+
+    <button onclick="f7()" onfocus="focus7()">Click 7</button>
+    <button onclick="f8()" onfocus="focus8()">Click 8</button>
+    <button onclick="f9()" onfocus="focus9()">Click 9</button>
+    <button onclick="f10()" onfocus="focus10()">Click 10</button>
+    <button onclick="f11()" onfocus="focus11()">Click 11</button>
+    <button onclick="f12()" onfocus="focus12()">Click 12</button>
+    <button onclick="f13()" onfocus="focus13()">Click 13</button>
+    <button onclick="f14()" onfocus="focus14()">Click 14</button>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+
+
+    <script>
+        // button 1
+            function f1() {
+                let name = ["Raj","Adarsh","aditya","sanket"];
+                document.getElementById("demo1").innerHTML = "<b>Simple array: </b>" + name;
+            }
+            function focus1() {
+                document.body.style.backgroundColor = "aquamarine";
+            }
+
+
+        // button 2
+            function f2() {
+                let name2 = ["Rajkumar","Adinath","Tejas","Abhishek"];
+                document.getElementById("demo2").innerHTML ="<b> array 2: </b>" +  name2;
+            }
+            function focus2() {
+                document.body.style.backgroundColor = "aqua";
+            }
+
+
+        // button 3
+            function f3() {
+                let name3 = ["R","A","J","K","U","M","A","R"];
+                document.getElementById("demo3").innerHTML = "<b>To get special letter or word from array: </b>" + name3[0];
+                console.log(name3[1]);
+                console.log(name3[5]);
+
+                // replace element in array
+                console.log(name3[7] = "replaces element in array: " +  "Raj");
+                console.log(name3);
+            }
+            function focus3() {
+                document.body.style.backgroundColor = "violet";
+            }
+
+
+        // button 4
+            function f4() {
+                let cars = ["volvo","alto","swift","wagonar","suzuki",];
+                document.getElementById("demo4").innerHTML = "<b> Cars array: </b>" +  cars;
+            }
+            function focus4() {
+                document.body.style.backgroundColor = "cadetblue";
+            }
+
+            // to print all values in array use for loop or concatination
+            function f4() {
+                let cars1 = ["volvo","alto","swift","wagonar","suzuki",];
+                for(i=0; i<cars1.length;i++){
+                    document.getElementById("demo4").innerHTML = "<b> Position of element is: </b>" + i + ", " + cars1[i] + " " + "<br> <b> see more in console.log....</b>";
+                }
+            }
+
+            // using console.log
+            let cars2 = ["volvo","alto","swift","wagonar","suzuki",];
+            console.log(cars2);
+            for(i=0;i<cars2.length;i++){
+                console.log("position is: " + i + ", " + cars2[i]);
+                
+            }
+
+
+        // button 5
+            function f5(){
+                let fruits = ["lemon","apple","mango","guava","berry","orange",];
+                document.getElementById("demo5").innerHTML = "<b>add symbols to sepaarate array: </b>" + fruits.join("*");
+                // console.log(fruits.join("*")); 
+                // you can add any symbol at *(star)...
+            }
+            function focus5() {
+                document.body.style.backgroundColor = "coral";
+            }
+            
+
+        // button 6 
+            function f6(){
+                let fruits6 = ["lemon","apple","mango","guava","berry","orange",];
+                document.getElementById("demo6").innerHTML ="<b>separates the string using string method: </b>" + fruits6.toString();
+                console.log(fruits6);
+
+                // push method will add new element in last position
+                document.getElementById("demo6").innerHTML ="<b>push method adds new element at last position: </b>" + fruits6.push("watermelon");
+                document.getElementById("demo6").innerHTML ="<b>adds new element in array using push method: </b>" +  fruits6;
+
+                // pop method will remove only last element
+                console.log(fruits6.pop());
+                console.log(fruits6);
+
+            }
+            function focus6() {
+                document.body.style.backgroundColor = "crimson";
+            }
+
+        // button 7
+            function f7() {
+                let name7 = ["cricket","tennis","golf","football","badminton","polo"];
+                console.log(name7);
+
+                // shift method will remove 1st element
+                console.log(name7.shift());
+                console.log(name7);
+
+                // unshift method will replace new element at 1st position
+                document.getElementById("demo7").innerHTML = name7.unshift("Handball");
+                document.getElementById("demo7").innerHTML ="<b>unshift method to replace element at first position: </b>"  + name7;
+            }
+            function focus7() {
+                document.body.style.backgroundColor = "dodgerblue";
+            }
+
+
+        // button 8
+            function f8() {
+                let name8 = ["Rajkumar","Adinath","Tejas","Abhishek","Siddhesh","Karan"];
+                console.log(name8);
+
+                // delete method deletes the element but returns an empty msg there
+                document.getElementById("demo8").innerHTML = delete name8[1];
+                document.getElementById("demo8").innerHTML ="<b>delete method : </b>" + name8;
+                console.log(delete name8[5]);
+                console.log(name8);
+  
+            }
+            function focus8() {
+                document.body.style.backgroundColor = "cyan";
+            }
+
+
+        // button 9
+            function f9() {
+                let name9 = ["Rajkumar","Adinath","Tejas","Abhishek","Siddhesh","Karan"];
+                console.log(name9);
+                document.getElementById("demo9").innerHTML = "<b>Simple Array: </b>" + name9;
+  
+            }
+            function focus9() {
+                document.body.style.backgroundColor = "cyan";
+            }
+
+        // button 10
+            function f10() {
+                let boys = ["B1","B2","B3","B4","B5"];
+                let girls = ["G1","G2","G3","G4","G5"];
+
+                console.log(boys);
+                console.log(girls);
+
+                // concat two arrays
+                console.log(boys.concat(girls));
+                document.getElementById("demo10").innerHTML ="<b>concat method to ca=oncat two arrays: </b>" + boys.concat(girls);
+            }
+            function focus10() {
+                document.body.style.backgroundColor = "dimgray";
+            }
+
+
+        // button 11
+            function f11() {
+                let brands = ["puma","adidas","loafer","hightech","paragon","sparx"];
+                console.log(brands);
+                document.getElementById("demo11").innerHTML = brands;
+
+                // splice method will add new element at exact position
+                // note : splice's 1st value will be of where to add element and 2nd value deletes the elements upto that number in array.
+                document.getElementById("demo11").innerHTML =  brands.splice(1,3,"simple","Branded");
+                document.getElementById("demo11").innerHTML  = "<b>splice method : </b>" + brands;
+                console.log(brands);
+            }
+            function focus11() {
+                document.body.style.backgroundColor = "darkgoldenrod";
+            }
+
+
+        // button 12
+             function f12() {
+                let boys = ["Bag","Ball","You","Mango","Jack","4","#RAJ","50"];
+                
+                console.log(boys);
+
+                // sort the array
+                console.log(boys.sort);
+                document.getElementById("demo12").innerHTML = "<b>Sorted array: </b>" + boys.sort();
+
+                // reverse the array
+                console.log(boys.reverse());
+            }
+            function focus12() {
+                document.body.style.backgroundColor = "indianred";
+            }
+
+
+        // button 13
+            function f13() {
+                let x = ["50","40","78","18","189","75","01"];
+                console.log(x);
+                
+                // using Math.max method
+                console.log(Math.max.apply(null,x));
+                document.getElementById("demo13").innerHTML = "<b>Math.max method to print largest element in array: </b>" + Math.max.apply(null,x);
+            }
+            function focus13() {
+                document.body.style.backgroundColor = "lightgreen";
+            }
+
+
+        // button 14
+            function f14() {
+                let xy = ["50","40","78","18","189","75","13"];
+                console.log(xy);
+
+                // using Math.min mthod
+                console.log(Math.min.apply(null,xy));
+                document.getElementById("demo14").innerHTML = "<b>Math.min method to print smallest element in array: </b>" + Math.min.apply(null,xy);
+            }
+            function focus14() {
+                document.body.style.backgroundColor = "peru";
+            }
+
+            
+    </script>
+</body>
+</html>

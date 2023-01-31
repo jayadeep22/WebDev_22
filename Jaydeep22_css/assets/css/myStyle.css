@@ -1,0 +1,21 @@
+
+/* Universal Selector */
+
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: thistle;
+}
+h1{
+    text-align: center;
+}
+p{
+    color: red;
+}
+.para1{
+    border: 2px solid;
+}
+#myDiv{
+    background-color: aqua;
+}

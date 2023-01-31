@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <button onfocus="focusevent()" onblur="blurevent()">click</button>
+
+    <button onfocus="focusevent2()" onblur="blurevent2()">click Here</button>
+
+    <button onfocus="focusevent3()" onblur="blurevent3()">click Me</button>
+
+    <button onfocus="focusevent4()">Clicked</button>
+    <button onblur="blurevent4()">Clicking</button>
+
+    <button onfocusin="focusin()" onfocusout="focusout()">shoot</button>
+
+    <script>
+        function focusevent(){
+            document.body.style.backgroundColor = "pink";
+        }
+        function blurevent(){
+            document.body.style.backgroundColor = "yellow";
+        }
+
+        function focusevent2() {
+            document.body.style.backgroundColor = "grey";
+        }
+        function blurevent2() {
+            document.body.style.backgroundColor = "tomato";
+        }
+
+        function focusevent3() {
+            document.body.style.backgroundColor = "purple";
+        }
+        function blurevent3() {
+            document.body.style.backgroundColor = "blue";
+        }
+        function focusevent4() {
+            document.body.style.backgroundColor = "Orange";
+        }
+
+        function blurevent4() {
+            document.body.style.backgroundColor = "green";
+        }
+
+        function focusin(){
+            document.body.style.backgroundColor = "red";
+        }
+        function focusout(){
+            document.body.style.backgroundColor = "orange";
+        }
+       
+    </script>
+</body>
+</html>

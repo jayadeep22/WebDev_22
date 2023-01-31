@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+
+<body>
+    <h3 id="demo"></h3>
+
+    <script>
+        // let age = Number(prompt("Enter Your Age"));
+        // function category(age) {
+        //     return new Promise(function (resolve, reject) {
+        //         console.log("Fetching result please wait.......");
+        //         setTimeout(() => {
+        //             if (age >= 18) {
+        //                 resolve("Eligible");
+        //             }
+        //             else {
+        //                 reject("Not Eligible");
+        //             }
+        //         }, 2000);
+        //     })
+        // }
+        // let a = (accept) => {
+        //     console.log(accept);
+        // }
+        // let b = (decline)=>{
+        //     console.log(decline);
+        // }
+        // category(age).then(a).catch(b);
+
+
+
+
+        //    practice   //
+
+        // let age = Number(prompt("enter age: "));
+        // function vote(age) {
+        //     return new Promise(function (resolve, reject) {
+        //         console.log("Please Wait Processing......");
+        //         setTimeout(() => {
+        //             if (age >= 18) {
+        //                 resolve("Eligible");
+        //             }
+        //             else {
+        //                 reject("Not Eligible");
+        //             }
+        //         }, 2000);
+        //     })
+        // }
+        // let success = (accept) => {
+        //     console.log(accept);
+        // }
+        // let failure = (decline) => {
+        //     console.log(decline);
+        // }
+        // vote(age).then(success).catch(failure);
+
+
+
+
+
+        // let age = Number(prompt("enter age"));
+        // function vote(age){
+        //     return new Promise(function(resolve,reject){
+        //         if(age>=18){
+        //             resolve("Pass");
+        //         }
+        //         else{
+        //             reject("Fail");
+        //         }
+        //     })
+        // }
+        // let pass = (passed) => {
+        //     console.log(passed);
+        // }
+        // let failed = (fails) => {
+        //     console.log(fails);
+        // }
+        // vote(age).then(pass).catch(failed);
+
+
+
+        //   practise  //
+
+        // let category = prompt("Are You Married : ");
+        // function married(category) {
+        //     return new Promise(function (resolve, reject) {
+        //         console.log("Clearing Your doubt, wait......");
+        //         setTimeout(() => {
+        //             if (category == "yes") {
+        //                 resolve("Tu to Happy Nikla be...");
+        //             }
+        //             else {
+        //                 reject("Unhappy rahega jindagibhar...Jaldi Shaadi krr bhaiii");
+        //             }
+        //         }, 2000);
+        //     })
+        // }
+        // let success = (happy) => {
+        //     console.log(happy);
+        // }
+        // let fail = (unhappy) => {
+        //     console.log(unhappy);
+        // }
+        // married(category).then(success).catch(fail);
+
+
+
+        //    practise   //
+
+        // function add(addition){
+        //     document.getElementById("demo").innerHTML = addition;
+        // }
+        // function Calculator(a,b){
+        //     let sum = a+b;
+        //     return sum;
+        // }
+
+        // let result = Calculator(5,20);
+        // console.log(result);
+        // document.getElementById("demo").innerHTML = "Result is: " + result;
+
+        //   practice   //
+
+        // function add(addition){
+        //     // document.getElementById("demo").innerHTML = addition;
+        // }
+
+        // function Calculator(a,b){
+        //     let sum = a + b;
+        //     return sum;
+        // }
+
+        // let Result = Calculator(20,30);
+        // document.getElementById("demo").innerHTML = "Result is: " + Result;
+        // console.log(Result);
+
+
+        //    practice    //
+
+        // function Calci(a,b){
+        //     let multiplication = a * b;
+        //     return multiplication;
+        // }
+        // let Result = Calci(12,5);
+        // document.getElementById("demo").innerHTML = "Multiplication is: " + Result;
+
+
+        // new practice
+
+        let age = Number(prompt("enter age"));
+        function valid(age) {
+            return new Promise(function (resolve, reject) {
+
+                setTimeout(() => {
+                    
+                    if (age >= 18) {
+                        resolve("Success");
+                    }
+                    else {
+                        reject("Decline");
+                    }
+                }, 1000);
+            })
+        }
+        let succes = (success) => {
+            alert(success);
+        }
+        let failure = (error) => {
+            alert(error);
+        }
+        valid(age).then(succes).catch(failure);
+
+        </script>
+</body>
+
+
+</html>

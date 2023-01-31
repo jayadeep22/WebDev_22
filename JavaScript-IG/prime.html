@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let no,i;
+        // for(no=2;no<=100;no++)
+        // {
+        //     for(i=2;i<=no;i++)
+        //     {
+        //         if(no%i==0)
+        //         {
+        //             break;
+        //         }
+        //     }
+        //     if(no==i)
+        //     {
+        //         console.log(no);
+        //     }
+        // }
+
+        let no,i,count=0;
+        no = parseInt(prompt("enter no:"));
+        for(i=1;i<=no;i++)
+        {
+            if(no%i==0)
+            {
+                count++;
+            }
+        }
+        if(count==2)
+        {
+            console.log("no is prime");
+        }
+        else{
+            console.log("not prime");
+        }
+    </script>
+</body>
+</html>

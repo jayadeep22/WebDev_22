@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Change</title>
+</head>
+<body>
+    <select  id="year" onchange="changeyear()">
+        <option value="select">select</option>
+        <option value="First Year">first year</option>
+        <option value="Second Year">second year</option>
+        <option value="Third Year">third year</option>
+        <option value="Final Year">final year</option>
+    </select>
+
+
+    <script>
+        function changeyear(){
+            let year = document.getElementById("year").value;
+            console.log("you selecte year:" + year);
+            alert("you selecte year:" + year);
+        }
+    </script>
+
+    
+
+    <select name="" id="selected" onchange="changed()">
+        <option value="selecT">---- Select ----</option>
+        <option value="FY">FY</option>
+        <option value="SY">SY</option>
+        <option value="TY">TY</option>
+        <option value="LAST YEAR">LAST YEAR</option>
+    </select>
+
+    <script>
+        function changed() {
+            let years = document.getElementById("selected").value;
+            console.log("You Selected option is : " + years);
+            alert("You Selected option is : " + years);
+        }
+    </script>
+
+        <select name="" id="new" onchange="raj()">
+            <option value="">----Suzuki----</option>
+            <option value="Swift">Swift</option>
+            <option value="Alto">Alto</option>
+            <option value="Wagonar">Wagonar</option>
+            <option value="Ciaz">Ciaz</option>
+            <option value="Santro">Santro</option>
+        </select>
+
+        <script>
+            function raj() {
+                var z = document.getElementById("new").value;
+                alert("Are You Interested Im : " + z);
+            }
+        </script>
+</html>
+</body>
+

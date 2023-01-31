@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        #demo {
+            height: 96vh;
+            width: 100%;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+
+    <script>
+        // function time(){
+        //     let date = new Date();
+
+        //     document.getElementById("demo").innerHTML = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        // }
+        // setInterval(time,1000);
+
+       
+
+        // function time(){
+        //     let timer = document.getElementById("demo");
+
+        //     let date = new Date();
+        //     let hours = date.getHours();
+        //     let minutes = date.getMinutes();
+        //     let seconds = date.getSeconds();
+
+        //     timer.textContent = ("0" + hours).substr(-2) + ":" +  ("0" + minutes).substr(-2)  + ":" +  ("0" + seconds).substr(-2);
+        // }
+
+        // setInterval(time, 1000);
+
+        function time(){
+            let x = document.getElementById("demo");
+
+            let d = new Date();
+            let h = d.getHours();
+            let m = d.getMinutes();
+            let s = d.getSeconds();
+            x.textContent = ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+        }
+        setInterval(time,1000);
+
+    </script>
+</body>
+
+</html>

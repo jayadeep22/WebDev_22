@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Change</title>
+    <style>
+        #main {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #img {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .span1 {
+            height: 25px;
+            padding: 8px;
+            border: 2px solid gray;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: aliceblue;
+        }
+
+        .span2 {
+            height: 25px;
+            padding: 8px;
+            border: 2px solid gray;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: darksalmon;
+        }
+
+        .span3 {
+            height: 25px;
+            padding: 8px;
+            border: 2px solid gray;
+            border-radius: 50%;
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        .span4 {
+            height: 25px;
+            padding: 8px;
+            border: 2px solid gray;
+            border-radius: 50%;
+            background-color: aqua;
+            cursor: pointer;
+        }
+        #btns {
+            text-align: center;
+            font-size: 25px;
+            padding-top:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="btns"> 
+        <label><b>Change Theme :- </b></label>
+        <button title="light theme" onclick="sp1()" class="span1"></button>
+        <button title="pinkish theme" onclick="sp2()" class="span2"></button>
+        <button title="orange theme" onclick="sp3()" class="span3"></button>
+        <button title="aqua theme" onclick="sp4()" class="span4"></button>
+    </div>
+    <div id="main">
+
+        <img id="img"
+            src="/images/sunset-bg"
+            style="height: 400px; width: 98%;" alt="">
+
+            <h1>About Us</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolor ratione eos animi odit est veniam.
+            Voluptatibus cumque labore consequatur repellat similique, temporibus, aspernatur repellendus corrupti
+            maxime id delectus inventore natus accusamus architecto culpa quam totam ipsam obcaecati vitae atque est
+            pariatur? Id harum quaerat praesentium tenetur sint blanditiis perferendis magnam quasi. Quibusdam, in
+            provident? Ut quaerat hic aliquid mollitia id sapiente autem iusto perferendis tenetur natus alias nisi
+            praesentium culpa debitis distinctio est consequatur, voluptate, maiores cum. Unde enim, adipisci qui saepe
+            rerum provident in, possimus, perspiciatis consectetur sed nisi odit facere ducimus commodi illo architecto?
+            Et, provident. Eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ad perferendis
+            cupiditate assumenda pariatur, qui error alias excepturi exercitationem, nesciunt mollitia veritatis odio
+            maxime. Perferendis tenetur cupiditate reprehenderit ducimus autem, ab numquam eveniet! Quo inventore ab
+            eaque! Exercitationem dignissimos fuga laudantium aspernatur vero nostrum non rerum et earum, explicabo
+            ratione atque iusto, doloremque ex. Praesentium a quia saepe culpa. Reiciendis, voluptate consequatur.
+            Recusandae est voluptatibus tempore sint totam deleniti, odio alias, modi excepturi ducimus hic vero
+            expedita molestias reprehenderit laudantium iste laborum! Unde soluta dolorum impedit, eligendi tempora
+            laborum dicta repellendus error libero nam, tempore eaque molestiae in mollitia aperiam esse! Cumque, ut
+            quod? Dicta fugit in molestias saepe, amet voluptatum ad repudiandae, mollitia quae aliquam adipisci
+            cupiditate, laboriosam earum! Aliquid, delectus. Voluptatibus minus ea nihil quos cumque eos aut dolore.
+            Quae obcaecati, voluptatem omnis sapiente nemo, veritatis sint atque illo eveniet eos doloribus maxime
+            praesentium magni nesciunt voluptas voluptate asperiores eius fugit aut, nihil ex enim inventore eum. Nihil
+            possimus fugit deserunt ducimus harum dolorem esse repellendus dolor veniam. Nisi cumque, accusamus
+            blanditiis consectetur cupiditate alias incidunt debitis voluptate odit maiores velit minima, aperiam, totam
+            animi atque explicabo sapiente veritatis saepe molestias distinctio unde fugiat optio? Similique, deserunt
+            eos.</p>
+    </div>
+
+    <script>
+        function sp1() {
+            document.body.style.backgroundColor = "aliceblue";
+        }
+
+        function sp2() {
+            document.body.style.backgroundColor = "darksalmon";
+        }
+
+        function sp3() {
+            document.body.style.backgroundColor = "orange";
+        }
+
+        function sp4() {
+            document.body.style.backgroundColor = "aqua";
+        }
+    </script>
+</body>
+
+</html>

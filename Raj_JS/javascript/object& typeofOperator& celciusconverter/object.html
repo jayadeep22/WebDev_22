@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+
+<body>
+  <p id="demo">para</p>
+  <script>
+    // let rollno = 555;
+    // let name = "sanjay ghodawat";
+    // let sub = "javascript";
+    // let address = "kolhapur";
+    // let age = 25;
+    // console.log(rollno);
+    // console.log(name,sub);
+    // console.log(rollno + " " + name + " " +sub + " " +address + " " + age  );
+
+
+    let student1 = { rollno: 55, name: "sanjay", sub: "js", address: "kolhapur", age: 25 };
+    console.log(student1);
+    let student2 = { rollno: 5, name: "sunny", sub: "css", address: "sangli", age: 28 };
+    console.log(student2);
+    console.log(student2.address + " " + student2.age);
+
+
+    let employee = { id: 01, name: "jaydeep", address: "ramanandnagar", designation: "master", salary: 20 };
+    console.log(employee["designation", "address"] + " " + employee["address"]);
+    console.log(employee["salary"]);
+
+
+    let person = {
+      firstname: "john", lastname: "doe", age: 85, eyeColor: "neongreen",
+      fullName: function () {
+        return this.firstname + " " + this.lastname;
+      }
+    };
+    //   console.log(person.fullName());
+
+    document.getElementById("demo").innerHTML = person.fullName();
+
+
+
+
+
+  </script>
+</body>
+
+</html>

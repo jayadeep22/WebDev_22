@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary</title>
+</head>
+<body>
+    <button onclick="btn1()">Check Here</button>
+    <p id="p"></p>
+
+    <button onclick="btn2()">Click</button>
+    <p id="p1"></p>
+
+    <button onclick="btn3()">Click</button>
+    <p id="p2"></p>
+
+
+    <script>
+
+        function btn1() {
+            let age = prompt("Please Enter Your Age : ");
+            let vote = age>=18 ? "you are eligible to vote" : "Please wait until you're 18";
+            document.getElementById("p").innerHTML = (vote);
+        }
+
+        function btn2() {
+            let ages = prompt("Enter Your Age");
+            let votes = ages>=18 ? "Eligible" : "Not Eligible";
+            document.getElementById("p1").innerHTML = (votes);
+        }
+
+        function btn3() {
+            let ages1 = prompt("Enter Your Age");
+            if(ages1>=18){
+                document.getElementById("p2").innerHTML = "You Are Eligible";
+            }
+            else{
+                document.getElementById("p2").innerHTML = "Not Eligible";
+            }
+        }
+    </script>
+</body>
+</html>

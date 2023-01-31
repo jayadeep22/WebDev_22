@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilometer to Meter & vice versa</title>
+</head>
+
+<body>
+    <h1>Covert's Kilometer to meter & meter to Kilometer</h1>
+
+    <p>click below button to process</p>
+
+    <button onclick="convert()">Click here</button>
+
+    <h3 id="demo1"></h3>
+    <h3 id="demo2"></h3>
+    <script>
+        
+        // Kilometer to meter and meter to kilometer
+
+        // let value = Number(prompt("enter distance"));
+        // function KM(value) {
+        //     var KMtoM = (value * 1000);
+        //     document.write(KMtoM + " m" + "<br>");
+        // }
+        // KM(value);
+
+        // function M(value) {
+        //     var MtoKM = (value / 1000);
+        //     document.write(MtoKM + " km");
+        // }
+        // M(value);
+
+        function convert() {
+
+            let y = Number(prompt("enter distance in km"));
+
+            let z = Number(prompt("enter distance in meter"));
+
+            var KMtoM = (y * 1000);
+            document.getElementById("demo1").innerHTML ="Answer in meter: " +  KMtoM + " m" + "<br>";
+
+            let a = (z / 1000);
+            document.getElementById("demo2").innerHTML ="Answer in Kilometer: " + a + " km";
+        }
+        convert();
+
+    </script>
+</body>
+
+</html>

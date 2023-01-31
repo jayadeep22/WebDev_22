@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+    <style>
+        header{
+            background-color: grey;
+            height: 100px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+        aside{
+            background-color: coral;
+            height: 300px;
+            width: 30%;
+            float: left;
+        }
+        ul{
+            list-style-type:none ;
+        }
+        article{
+            background-color: burlywood;
+            height: 300px;
+            width: 40%;
+            float: left;
+        }
+        div{
+            background-color: violet;
+            height: 300px;
+            width: 30%;
+            float: right;
+        }
+        footer{
+            background-color: black;
+            height: 100px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            clear: both;
+        }
+        @media (max-width:700px){
+            aside,article,div{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cities</h1>
+    </header>
+    <aside>
+        <ul>
+            <li><a href="">London</a></li>
+            <li><a href="">Paris</a></li>
+            <li><a href="">Tokyo</a></li>
+        </ul>
+    </aside>
+    <article>
+        <h1>London</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vitae laborum consequatur magni neque sed, quasi molestiae architecto in tempora, dolor esse deleniti, consequuntur ipsa eius reiciendis magnam. Voluptatem, commodi?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vitae laborum consequatur magni neque sed, quasi molestiae architecto in tempora, dolor esse deleniti, consequuntur ipsa eius reiciendis magnam. Voluptatem, commodi?</p>
+    </article>
+    <div>
+        <h2>Paris</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vitae laborum consequatur magni neque sed, quasi molestiae architecto in tempora, dolor esse deleniti, consequuntur ipsa eius reiciendis magnam. Voluptatem, commodi?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vitae laborum consequatur magni neque sed, quasi molestiae architecto in tempora, dolor esse deleniti, consequuntur ipsa eius reiciendis magnam. Voluptatem, commodi?</p>
+    </div>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>

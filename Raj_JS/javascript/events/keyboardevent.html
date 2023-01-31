@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+</head>
+<body>
+   <input type="text" id="mytext" placeholder="keyup" onkeyup="keyup()">
+   <input type="text" id="text3" onkeypress="keypress()"  placeholder="keypress1">
+   <input type="text" id="text1" onkeypress="press1()" placeholder="ascii" >
+
+   <input type="text" id="text2" onkeypress="press2()" placeholder="keyup" >
+
+   
+   <script>
+    // onkeyup event
+    function keyup(){
+        document.getElementById("mytext").value;
+        alert("keyup");
+    }
+
+
+ //    onkeypress 
+    function keypress(){
+        // if(event.key == "a" , "b")
+        if(event.key == "a" || event.key =="b")
+        {
+            event.preventDefault();    
+        }
+    }
+
+
+    // onkeypress ascii code
+   function press1(){
+        alert(event.keyCode);
+    }
+
+
+ //    onkeypress revise
+    function press2() {
+        if(event.key == 'a' || event.key == 'b' || event.key == 's')
+        {
+            event.preventDefault();
+        }
+    }
+   </script>
+
+</body>
+</html>

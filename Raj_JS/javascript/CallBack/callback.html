@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+    <script>
+        //   addition   //
+        function show(any){
+            console.log(any);
+        }
+        function calculate(a,b,callback){
+            let sum = a + b;
+            callback(sum);
+        }
+        calculate(15,5,show);
+
+
+        //    multiplication   //
+        function show(display){
+            console.log(display);
+        }
+        function multiply(a,b,callback){
+            let x = a * b;
+            callback(x);
+        }
+        multiply(12,5,show);
+
+
+        //   division   //
+        function divide(print){
+            console.log(print);
+        }
+        function division(a,b,callback){
+            let y = a/b;
+            callback(y);
+        }
+        division(100,2,divide);
+    </script>
+
+</body>
+</html>

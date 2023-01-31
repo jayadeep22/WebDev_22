@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+<body>
+    <button onclick="btn1()">Click 1</button>
+    <p id="p1"></p>
+
+    <button onclick="btn2()">Click 2</button>
+    <p id="p2"></p>
+
+
+    <script>
+        // numbers divisible by 2 and 5
+        function btn1() {
+            let i=1;
+            while(i<=1000){
+                if(i%2==0 && i%5==0){
+                    document.getElementById("p1").innerHTML += " " + i;
+                }
+                i++;
+            }
+        }
+
+        
+        
+    </script>
+</body>
+</html>

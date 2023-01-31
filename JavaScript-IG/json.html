@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let student = {
+        //                  "firstname":"rohan",
+        //                  "lastname":"patil",
+        //                  "age":25,
+        //                  "city":"kolhapur",
+        //                  "mobno":9858456525,
+        //                  "gender":"male",
+        // }
+
+        // console.log(student);
+        // let str = JSON.stringify(student);
+        // console.log(str);
+
+        // let change = str.replace("patil","deshmukh");
+        // console.log(change);
+
+        //  let jsonobj = JSON.parse(str);
+        //  console.log(jsonobj);
+
+        let person = {
+                       "name":"sandip",
+                       "age":25,
+                       "married":"true",
+                       "movies":["don","dhamal","avatar","golmal"],
+                       "fruits":{name:"mango",season:"summer"},
+                       "fort":null,
+
+        }
+        console.log(person);
+
+        let str = JSON.stringify(person);
+        console.log(str);
+
+        let x = str.replace("dhamal","taal");
+        console.log(x);
+        let pars=JSON.parse(x);
+        console.log(pars);
+
+        // let par = JSON.parse(str);
+        // console.log(par);
+
+
+
+
+    </script>
+</body>
+</html>

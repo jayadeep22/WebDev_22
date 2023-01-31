@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async and Await</title>
+</head>
+
+<body>
+    <script>
+        // practice
+        let no1 = parseInt(prompt("enter mo1"));
+        let no2 = parseInt(prompt("enter no2"));
+
+        async function practice() {
+            let x = new Promise(function (resolve, reject) {
+                setTimeout(() => {
+                    let mult = no1*no2;
+                    resolve(mult);
+                }, 2000);
+            })
+            console.log("result is: " + await x);
+
+            let y = new Promise(function(resolve,reject){
+                setTimeout(() => {
+                    let divi = no1/no2;
+                    resolve(divi);
+                }, 2000);
+            })
+            console.log("answer is : " + await y);
+
+            let z = new Promise(function(resolve,reject){
+                setTimeout(() => {
+                    let add = no1 + no2;
+                    resolve(add);
+                }, 2000);
+            })
+            console.log("addition is: " + await z);
+        }
+        practice();
+
+
+
+        //     normal example    //
+
+        async function show(){
+            let condition = new Promise(function(resolve,reject){
+                setTimeout(() => {
+                    console.log("heyy sirii...");
+                }, 3000);
+            })
+            console.log(await condition);
+        }
+        show();
+
+
+        //     Priority    //
+
+        async function msg(){
+            console.log("msg-1");
+            console.log("msg-2");
+            console.log("msg-3");
+            await console.log("msg-4");
+            console.log("msg-5");
+            console.log("msg-6");
+        }
+        console.log("msg-7");
+
+        msg();
+        console.log("msg-1");
+
+
+        // weather example
+        async function atmosphere(){
+            let Kopw = new Promise(function(resolve,reject){
+                setTimeout(() => {
+                    resolve("22 degree");
+                }, 2000);
+            })
+            let Sngw = new Promise(function(resolve,reject){
+                setTimeout(() => {
+                    resolve("30 degree");
+                }, 4000);
+            })
+            console.log("pending...");
+            let kopw = await Kopw;
+            console.log(kopw);
+
+            console.log("pending...");
+            let sngw = await Sngw;
+            console.log(sngw);
+        }
+        atmosphere();
+
+
+         //     Weather    //
+
+        // async function atmosphere() {
+        //     let kopw = new Promise(function(resolve,reject){
+        //         setTimeout(() => {
+        //             resolve("21 degree");
+        //         }, 3000);
+        //     })
+
+        //     let sngw = new Promise(function(resolve,reject){
+        //         setTimeout(() => {
+        //             resolve("30 degree");
+        //         }, 5000);
+        //     })
+        //     console.log("fetching kolhapur weather...");
+        //     let Kopw = await kopw;
+        //     console.log(Kopw);
+
+        //     console.log("fetching Sangali weather...");
+        //     let Sangw = await sngw;
+        //     console.log(Sangw);
+        // }
+        // atmosphere().then();
+    </script>
+</body>
+
+</html>

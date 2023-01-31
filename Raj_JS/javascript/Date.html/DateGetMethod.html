@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Get Method</title>
+</head>
+<body>
+    <script>
+        let a = new Date(2022,11,17,07,35,45,999);
+        console.log(a);
+        document.write(a);
+
+        console.log(a.getFullYear());
+        document.write(", Full Year: "+a.getFullYear());
+
+        console.log(a.getMonth());
+        document.write(",  Get Month:  "+a.getMonth());
+
+        console.log(a.getDay());
+        document.write(",  Get Day:  "+a.getDay());
+
+        console.log(a.getHours());
+        document.write(",  Get Hours:  "+a.getHours());
+
+        console.log(a.getMinutes());
+        document.write(",  Get Minutes:  "+a.getMinutes());
+
+        console.log(a.getSeconds());
+        document.write(",  Get Seconds:  "+a.getSeconds());
+
+        console.log(a.getMilliseconds());
+        document.write(",  Get Miliseconds:  "+a.getMilliseconds());
+
+        console.log(a.getDay());
+        document.write(",  Get Day as Number:  "+a.getDay());
+
+
+        // get day as name
+        let b = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday",];
+        console.log(b[a.getDay()]);
+        document.write(", Get Day as Name: "+b[a.getDay()]);
+    </script>
+</body>
+</html>

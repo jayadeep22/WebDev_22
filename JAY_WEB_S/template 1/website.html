@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>my protein</title>
+   <link rel="short icon" href="https://www.passionateinmarketing.com/wp-content/uploads/2021/05/MYPROTEIN-1.jpg">
+   <style>
+      * {
+         margin: 0;
+      }
+
+      header {
+         display: inline;
+         padding-bottom: 10;
+         display: flex;
+      }
+
+      nav {
+         background-color: rgb(102, 203, 243);
+      }
+
+      li {
+
+         color: white;
+         display: inline-block;
+         padding: 20px;
+         font-size: x-large;
+      }
+      nav li:hover, nav li a:hover{
+         background-color: rgb(215, 215, 215);
+         color: black;
+      
+      }
+
+      li a {
+         text-decoration: none;
+         color: white;
+
+      }
+
+      section {
+         height: 500px;
+      }
+
+      #suppliments{
+         display: flex;
+       
+      }
+      .img1{
+      flex: 4;
+      margin: 3px;
+      }
+      .img2{
+      flex: 4;
+      margin: 3px;
+      }
+      .img3{
+      flex: 4;
+      margin: 3px;
+      }
+      .img4{
+      flex: 4;
+      margin: 3px;
+      }
+      /* .img1 {
+         width: 25%;
+         float: left;
+
+      }
+
+      .img2 {
+         width: 25%;
+         float: left;
+         
+      }
+
+      .img3 {
+         width: 25%;
+         float: left;
+      }
+
+      .img4 {
+         width: 25%;
+         float: left;
+      } */
+
+      .btnview {
+         display: block;
+         margin: auto;
+         padding: 10px;
+         /* text-decoration: none; */
+      }
+      /* a.btnview{
+         text-decoration: none;
+      } */
+
+      .cloth1 {
+         width: 25%;
+         float: left;
+      }
+
+      .cloth2 {
+         width: 25%;
+         float: left;
+      }
+
+      .cloth3 {
+         width: 25%;
+         float: left;
+      }
+
+      .cloth4 {
+         width: 25%;
+         float: left;
+      }
+
+      .acc1 {
+         width: 25%;
+         float: left;
+      }
+
+      .acc2 {
+         width: 25%;
+         float: left;
+      }
+
+      .acc3 {
+         width: 25%;
+         float: left;
+      }
+
+      .acc4 {
+         width: 25%;
+         float: left;
+         
+      }
+
+      .logo1 {
+
+         margin: auto;
+
+
+      }
+
+      .logo2 {
+
+         margin: auto;
+      }
+
+      .logo3 {
+
+         margin: auto;
+      }
+
+      .logo4 {
+
+         margin: auto;
+      }
+
+      .logo {
+         display: flex;
+
+      }
+
+      .singup {
+         background-color: rgb(35, 26, 26);
+         color: white;
+         padding-top: 30px;
+         height: 120px;
+
+      }
+
+      footer {
+         background-color: grey;
+      }
+
+      .info {
+
+         display: flex;
+
+      }
+
+      .info div.help{
+         flex: 4;
+      }
+      .info div.product{
+         flex: 4;
+      }
+      .info div.comapny{
+         flex: 4;
+      }
+      .info div.loyalty{
+         flex: 4;
+      }
+
+      .info div {
+        
+         margin: 10px 10px;
+         padding: 10px;
+      }
+
+      .info div a{
+         color: rgb(255, 255, 255);
+         text-decoration: none;
+         font-size: 20px;
+         display: block;
+         margin: 15px 0;
+        
+        
+      }
+      .info h3{
+         margin-top: 10px;
+      }
+      .info a:hover{
+         background-color:rgb(137, 137, 137) ;
+        
+      }
+      #copyright{
+         background-color: black;
+         color: white;
+         text-align: center;
+         padding: 20px;
+         font-size: 25px;
+      }
+   
+   </style>
+   <header>
+   
+   <a href="http://127.0.0.1:5500/website.html"><img src="https://www.exchange4media.com/news-photo/99803.Myprotein.jpg" alt="image" width="200"></a>
+      <form style="padding-top:10px ;margin-left: 250px; margin-top: 25px; ">
+         <input style="width: 400px; height: 35px;" type="search" id="gsearch" name="search">
+         <input style="width: 100px; height: 30px;" type="search" value="search">
+
+      </form>
+      <a href="">
+         <img
+            src="https://www.dlf.pt/dfpng/middlepng/542-5421479_individual-space-slide-show-comments-login-user-icon.png"
+            alt="" height="40" width="40" style="margin-top:30px ; margin-left: 80px;"></a>
+      <a href="Account" style="margin-top: 40px; margin-left: 10px; text-decoration: none; font-size: 20px;color: black;">Account</a>
+      <a href="">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7-ldm-bXghzgg-J8QZ307AnOLKrymQ_EKOw&usqp=CAU"
+            alt=""style="margin-top: 25px; margin-left: 10px; " height="50" width="50" >
+      </a>
+      <a href="Basket" style="margin-top: 40px; margin-left: 10px; text-decoration: none; font-size: 20px; color: black;">Basket</a>
+   </header>
+   <nav>
+      <ul>
+         <li><a href="#">Nutrition</a></li>
+         <li><a href="#">Bestseller</a></li>
+         <li><a href="#">Clothing & Accessories</a></li>
+         <li><a href="#">Blog</a></li>
+         <li><a href="#">Refer & Earn</a></li>
+
+
+      </ul>
+   </nav>
+   <section>
+      <a href="https://www.myprotein.co.in/nutrition/india-best-sellers.list">
+         <img
+            src="https://static.thcdn.com/widgets/83-in/54/original-Q2_Assets_-_Untitled_Page_-_2022-10-03T144644.719-014754.png"
+            alt="" width="100%"></a>
+   </section>
+
+   <h3 style="text-align:center;margin-bottom: 50px;">SUPPLEMENTS BEST SELLERS</h3>
+
+   <div id="suppliments">
+      <article class="img1">
+         <a href="https://www.myprotein.co.in/sports-nutrition/impact-whey-protein/11654605.html">
+            <img src="https://cdn.nutrabay.com/wp-content/uploads/2017/03/NB-MYP-1013-PA-510x510.jpg" alt=""
+               height="400px" width="100%"> </a>
+
+         <p>IMPACT WHEY PROTRIN <br>Enjoy 15% OFF / Use Code: MP15 <br>
+            <b> from 1199Rs. </b><br>
+            Save up to: 900Rs.
+
+         </p>
+      </article>
+      <article class="img2">
+         <a href="https://www.myprotein.co.in/sports-nutrition/impact-whey-isolate/11654647.html">
+            <img src="https://static.thcdn.com/productimg/300/300/11654647-1954934880530787.jpg" alt=""
+               height="400px" width="100%"></a>
+         <p>IMPACT WHEY ISOLATE <br> Enjoy 15% OFF | Use Code: MP15 <br>
+            <b>from 4499Rs.</b> <br>
+            Save up to:1000Rs.
+         </p>
+
+      </article>
+      <article class="img3">
+         <a href="https://www.myprotein.co.in/sports-nutrition/bcaa-4-1-1-powder/11654674.html">
+            <img src="https://static.thcdn.com/productimg/1600/1600/11654678-5434949283716241.jpg" alt=""
+               height="400px" width="100%"></a>
+         <p>BCAA 4:1:1 Powder <br>Enjoy 15% OFF | Use Code: MP15 <br>
+            <b> from 2099Rs.</b> <br>
+            Save up to:1921Rs.
+
+         </p>
+      </article>
+      <article class="img4">
+         <a href="https://www.myprotein.co.in/sports-nutrition/daily-vitamins/11654590.html">
+            <img src="https://static.thcdn.com/productimg/1600/1600/11654591-1684784709101328.jpg" alt=""
+               height="400px" width="100%"></a>
+         <p>Daily Vitamins <br> Enjoy 15% OFF | Use Code: MP15 <br>
+            <b> from 799Rs. </b> <br>
+            Save up to:300Rs.
+
+         </p>
+      </article> <br><br><br><br><br>
+
+
+      
+   </div>
+   <a href="https://www.myprotein.co.in/nutrition/india-best-sellers.list"
+         class="sectionPeek_allCta sectionPeek_allCta-show" data-js-element="sectionPeek_allCta">
+         <button class="btnview" type="button" style="text-align:center;"> View all</button>
+      </a> <br><br>
+      <iframe style="display: block;margin: auto;" width="750" height="400"
+         src="https://www.youtube.com/embed/5PA9LPC_wJw" title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen></iframe> <br><br>
+      <a href="https://www.myprotein.co.in/clothing/all-clothing-in.list">
+         <img src="/images/original-MP_Banners_(3)-010211.png" alt="" width="100%">
+      </a> <br><br><br>
+      <h3 style="text-align:center;margin-bottom: 90px; margin-bottom: 50px;"><B> CLOTHING BEST SELLERS</B></h3>
+
+      <article class="cloth1">
+         <a href="https://www.myprotein.co.in/sports-vests/mp-women-s-power-cross-back-sports-bra-danger/12147248.html">
+            <img src="https://static.thcdn.com/productimg/300/300/12147248-1564733368694682.jpg" alt=""
+               height="350PX"></a>
+         <P>MP Women's Power Cross Back Sports Bra- Danger <br>
+            Enjoy 15% OFF | Use Code: MP15 <br>
+            <b> from 2199Rs.</b> <br>
+            Save up to:200Rs.
+         </P>
+      </article>
+
+      <article class="cloth2">
+         <a href="https://www.myprotein.co.in/sports-trousers/mp-women-s-power-mesh-leggings-danger/12147266.html">
+            <img src="https://static.thcdn.com/productimg/300/300/12147266-3074929646016991.jpg" alt=""
+               height="350px"></a>
+         <p>MP Women's Power Mesh Leggings - Danger <br>
+
+            Enjoy 15% OFF | Use Code: MP15 <br>
+            <b>from 2099Rs.</b> <br>
+            Save up to:900Rs.
+         </p>
+      </article>
+      <article class="cloth3">
+         <a href="https://www.myprotein.co.in/sports-t-shirts/mp-men-s-rest-day-hoodie-classic-grey-marl/12302856.html">
+            <img src="https://static.thcdn.com/productimg/300/300/12302856-1064859047923666.jpg" alt=""
+               height="350px"></a>
+         <p>MP Men's Rest Day Hoodie - Classic Grey Marl <br>
+
+            Enjoy 15% OFF | Use Code: MP15 <br>
+            <b>from 2799Rs.</b> <br>
+            Save up to: 300Rs.
+         </p>
+      </article>
+      <article class="cloth4">
+         <a href="https://www.myprotein.co.in/sports-shorts/mp-men-s-tempo-shorts-intense-blue/12761508.html">
+            <img src="https://static.thcdn.com/productimg/300/300/12761508-4724873893857241.jpg" alt=""
+               height="350px"></a>
+         <p>MP Men's Tempo Shorts - Intense Blue <br>
+
+            Enjoy 15% OFF | Use Code: MP15 <br>
+
+
+
+            <b>from 2799Rs.</b> <br>
+            Save up to: 203Rs.
+         </p>
+      </article><br><br><br><br>
+      <a href="https://www.myprotein.co.in/nutrition/india-best-sellers.list"
+         class="sectionPeek_allCta sectionPeek_allCta-show" data-js-element="sectionPeek_allCta">
+         <button class="btnview" type="button" style="text-align:center; margin-bottom: 50px;"> View all</button>
+      </a><br> <br>
+      <h3 style="text-align:center;margin-bottom: 90px; margin-bottom: 50px;"><B>ACCESSORIES BEST SELLERS</B></h3>
+      <article class="acc1">
+         <a href="https://www.myprotein.co.in/protein-accessories/metal-shaker/11429436.html">
+            <img src="https://static.thcdn.com/productimg/300/300/11429436-5514998305716488.jpg" alt=""
+               height="350px"></a>
+         <p>Metal Shaker <br>
+            Enjoy 15% OFF | Use Code: MP15 <br>
+
+
+
+            <b>from 1399Rs.</b> <br>
+            Save 300Rs.
+         </p>
+      </article>
+      <article class="acc2">
+         <a href="https://www.myprotein.co.in/protein-accessories/double-walled-bottle-black/11907534.html">
+            <img src="https://static.thcdn.com/productimg/300/300/11907534-1344807490929560.jpg" alt="" height="350px">
+         </a>
+         <p>Double Walled Bottle — Black <br>
+            Enjoy 15% OFF | Use Code: MP15 <br>
+
+
+
+            <b>from 1699Rs.</b> <br>
+            Save 301Rs.
+         </p>
+      </article>
+      <article class="acc3">
+         <a href="https://www.myprotein.co.in/protein-accessories/1-2-gallon-hydrator/11133450.html">
+            <img src="https://static.thcdn.com/productimg/300/300/11133450-4704806517048377.jpg" alt="" height="350px">
+         </a>
+         <p>1/2 Gallon Hydrator <br>
+            Enjoy 15% OFF | Use Code: MP15 <br>
+
+
+
+            <b>from 799Rs.</b> <br>
+            Save 200Rs.
+         </p>
+      </article>
+      <article class="acc4">
+         <a
+            href="https://www.myprotein.co.in/protein-accessories/myprotein-resistance-bands-2-pack-2-16kg-light-grey/10615602.html">
+            <img src="https://static.thcdn.com/productimg/300/300/10615602-8964806507738486.jpg" alt="" height="350px">
+         </a>
+         <p>Myprotein Resistance Bands 2 PACK (2-16kg) <br> - Light Grey <br>
+
+
+            Enjoy 15% OFF | Use Code: MP15 <br>
+
+
+
+            <b>from 799Rs.</b> <br>
+            Save 232Rs.
+         </p>
+      </article>
+      <a href="https://www.myprotein.co.in/nutrition/india-best-sellers.list"
+         class="sectionPeek_allCta sectionPeek_allCta-show" data-js-element="sectionPeek_allCta">
+         <button class="btnview" type="button" style="text-align:center; margin-bottom: 50px;"> View all</button>
+      </a>
+      <div class="logo">
+         <article class="logo1">
+            <a href="https://www.myprotein.co.in/">
+               <img src="https://s1.thcdn.com/design-assets/images/myprotein/icons/LD%20Logo.png" alt="">
+            </a>
+         </article>
+         <article class="logo2">
+            <a href="https://www.myprotein.co.in/about-us/quality.list">
+               <img src="https://s4.thcdn.com/design-assets/images/myprotein/icons/Informed-sport.png" alt="">
+            </a>
+         </article>
+         <article class="logo3">
+            <a href="https://www.myprotein.co.in/">
+               <img src="https://s4.thcdn.com/design-assets/images/myprotein/icons/Fast-Track.png" alt="">
+            </a>
+         </article>
+         <article class="logo4">
+            <a href="https://www.myprotein.co.in/about-us.list">
+               <img src="https://s4.thcdn.com/design-assets/images/myprotein/icons/myp-icon7.png" alt="">
+            </a>
+         </article>
+      </div>
+      <article class="singup">
+         <h2> Sign up for exclusive offers:</h2>
+         <br>
+         <input type="button" value="Sign Up" style=" margin: 10px; padding: 10px; background-color: rgb(0,129,144);">
+         <div class="media" style="display: flex; justify-content: center; margin-top: -80px;">
+            <a href="https://www.facebook.com/MyproteinIN">
+               <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTum75Gj4HWUpG8ZSX-2JtGhvSv-8kLtR4Zpw&usqp=CAU"
+                  alt="" height="65px" style="margin-left:10px ;"></a>
+            <a href="https://www.instagram.com/myproteinin/">
+               <img
+                  src="data:image/png;base64,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"
+                  alt="" height="65px" style="margin-left:10px ;">
+            </a>
+            <a href="https://www.facebook.com/MyproteinIN">
+               <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAYsBoDB1V7slH7WhaK-D3_u2TMOAL0UChaQ&usqp=CAU"
+                  alt="" height="65px" style="margin-left:10px ;"></a>
+         </div>
+
+      </article>
+   </div>
+   <footer>
+      <br>
+     
+      <div class="info">
+         <div class="help">
+            <hr>
+            
+            <h3>Help and Information</h3>
+           
+            <a
+               href="https://www.myprotein.co.in/login.jsp?returnTo=https%3A%2F%2Fwww.myprotein.co.in%2FcustomerQuery.account">customer
+               services</a> 
+            <a href="https://www.myprotein.co.in/help-centre.list">Contact Us</a> 
+            <a href="https://www.myprotein.co.in/help-centre.list">Help Centre</a> 
+            <a href="https://www.myprotein.co.in/customer-services/returns-policy.list">Returns Policy</a> 
+            <a
+               href="https://www.myprotein.com.sg/track-your-order.list?adtype=&affil=thgppc&gclid=EAIaIQobChMIy_KMkeyf-AIV2vZRCh2uVwJxEAAYASAAEgIcAPD_BwE&gclsrc=aw.ds&kwds=39700017997406161&product_id=&settingsSaved=Y&shippingcountry=US&switchcurrency=USD&thg_ppc_campaign=71700000020666642&countrySelected=Y&_ga=2.6077494.449310156.1666080185-848774344.1666080185&_gac=1.7081606.1666247465.EAIaIQobChMIoP2Nz4vu-gIVBJlmAh3ZfwhYEAAYASAAEgJye_D_BwE">Track
+               my order</a>
+               <br>
+               <img src="https://static.thcdn.com/www/common/images/flags/1x1/in-9a96be6922.svg" width="20" height="25" alt="">
+               <select>
+                  <option>Myprotein India</option>
+                  <option>Myprotein Arab</option>
+                  <option>Myprotein Brazil</option>
+                  <option>Myprotein UK</option>
+                  <option>Myprotein Canada</option>
+                  <option>Myprotein USA</option>
+               </select>
+         </div>
+         
+         <div class="product">
+            <hr>
+            <h3>Products</h3>
+           
+            <a href="https://www.myprotein.com.sg/nutrition/protein.list">Nutrition</a> 
+            <a href="https://www.myprotein.com.sg/clothing.list">clothing & Accessories</a> 
+            <a href="https://www.myprotein.com.sg/dietary-needs.list">Dietary Needs</a> 
+            <a href="https://www.myprotein.com.sg/your-goals.list">Health & fitness Goals</a> 
+            <a href="https://www.myprotein.com.sg/ranges.list">Shop by Rang</a> 
+            <a href="https://www.myprotein.com.sg/new-customer.list">New Customer?</a>
+         </div>
+       
+         <div class="company">
+            <hr>
+            <h3>Company Information</h3>
+           
+            <a href="https://www.myprotein.com.sg/about-us.list">About Us</a> 
+            <a href="https://www.myprotein.co.in/about-us/ways-to-work-with-us.list">Partners</a> 
+            <a href="https://www.myprotein.com.sg/about-us/ways-to-work-with-us.list">Join #TeamSingapoe</a> 
+            <a href="https://www.thg.com/job-search/">Careers</a> 
+            <a href="http://s1.thcdn.com/design-assets/documents/THG-Anti-slavery-Statement.pdf">Modern Slavery
+               Statement</a> 
+            <a href="https://www.myprotein.co.in/customer-services/privacy-and-security.list">Privacy Policy</a> 
+            <a href="https://www.myprotein.co.in/about-us/quality.list">Quality Assurance</a> 
+            <a href="https://www.myprotein.co.in/customer-services/terms-and-conditions.list">Terms & Conditions</a>
+            
+            <a href="https://www.myprotein.co.in/about-us/trade-partner.list">Trade Account</a> 
+         </div>
+        
+         <div class="loyalty">
+            <hr>
+            <h3>Loyalty and Rewards</h3>
+           
+            <a href="https://www.myprotein.co.in/myreferrals.list">Refer a Friends</a>
+            <a href="https://www.myprotein.co.in/voucher-codes.list">Voucher Codes</a>
+         </div>
+      </div>
+      <div id="copyright">
+         2022 © The Hut.com Limited and MSM Retail Pvt Ltd.
+      </div>
+     
+
+
+
+   </footer>
+
+
+</body>
+
+</html>

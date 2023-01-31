@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Layout</title>
+    <style>
+        header{
+            background-color: grey;
+            height: 100px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+        section{
+            display: flex;
+        }
+        aside{
+            background-color: coral;
+            flex: 2;
+        }
+        ul{
+            list-style-type: none;
+        }
+        article{
+            background-color: violet;
+            flex: 5;
+        }
+        div{
+            background-color: chocolate;
+            flex: 5;
+        }
+        footer{
+            background-color: black;
+            height: 100px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            
+        }
+        @media (max-width:700px){
+            section{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cities</h1>
+    </header>
+    <section>
+        <aside>
+            <ul>
+                <li><a href="">London</a></li>
+                <li><a href="">Paris</a></li>
+                <li><a href="">Tokyo</a></li>
+            </ul>
+        </aside>
+        <article>
+            <h1>London</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vitae laborum consequatur magni neque sed, quasi molestiae architecto in tempora, dolor esse deleniti, consequuntur ipsa eius reiciendis magnam. Voluptatem, commodi?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vitae laborum consequatur magni neque sed, quasi molestiae architecto in tempora, dolor esse deleniti, consequuntur ipsa eius reiciendis magnam. Voluptatem, commodi?</p>
+        </article>
+        <div>
+            <h2>Paris</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vitae laborum consequatur magni neque sed, quasi molestiae architecto in tempora, dolor esse deleniti, consequuntur ipsa eius reiciendis magnam. Voluptatem, commodi?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vitae laborum consequatur magni neque sed, quasi molestiae architecto in tempora, dolor esse deleniti, consequuntur ipsa eius reiciendis magnam. Voluptatem, commodi?</p>
+        </div>
+    </section>
+    
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>

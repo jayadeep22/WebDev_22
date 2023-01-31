@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+
+<body>
+
+    <button onclick="btn1()">Get OTP</button>
+    <h2 id="otp"></h2>
+    
+    <script>
+        function btn1() {
+            prompt("Enter Mobile Number: ");
+   
+            let a = Math.floor(Math.random() *10000);
+            document.write("Your OTP is : " + a);
+            
+        }
+
+        // Euler's Formula
+        let a = Math.E;
+        console.log(a);
+
+        // Pi property
+        let b = Math.PI;
+        console.log(b);
+
+        // round property
+            let c = Math.round(1.2);
+            console.log("round: " + c);
+
+            let d = Math.round(1.5);
+            console.log("round: " + d);
+
+            let e = Math.round(-2.9);
+            console.log("round: " + e);
+
+        // ceil property
+            let f = Math.ceil(3.1);
+            console.log("ceil: " + f);
+
+            let g = Math.ceil(-5.9);
+            console.log("ceil: " + g);
+
+        //  floor property
+            let h = Math.floor(-5.2);
+            console.log("floor: " + h);
+
+            let i = Math.floor(7.9);
+            console.log("floor: " + i);
+
+        // trunc property
+
+            let j = Math.trunc(8.5);
+            console.log("trunc: " + j);
+
+            let k = Math.trunc(9.9);
+            console.log("trunc: " + k);
+
+            let l = Math.trunc(-10.5);
+            console.log("trunc: " + l);
+
+
+        // pow property
+
+            let m = Math.pow(6,2);
+            console.log("returns value of x to the power of y: " + m);
+
+            let n = Math.pow(-10,4);
+            console.log("returns value of x to the power of y: " + n);
+
+        // sqrt property
+
+            let o = Math.sqrt(100);
+            console.log("returns square root of value: " +  o);
+
+        // abs property
+
+            let p = Math.abs(-5.8);
+            console.log("returns value positive only: "+p);
+
+
+        //math min and max property
+
+            let q = Math.min(5.,10,0.1,-5,100);
+            console.log("returns minimum value: " + q);
+
+            let r = Math.max(5.,10,0.1,-5,100);
+            console.log("returns maximum value: " + r);
+
+
+        // math random property
+
+            let s = Math.random();
+            console.log("returns random number: " + s);
+
+            let t = Math.floor(Math.random() * 10000);
+            console.log("returns random number upto 10000: " + t);
+        
+
+            
+    </script>
+</body>
+
+</html>

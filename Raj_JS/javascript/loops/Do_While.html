@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While</title>
+</head>
+
+<body>
+    <button onclick="btn1()">Click 1</button>
+    <p id="p1"></p>
+
+    <button onclick="btn2()">Click 2</button>
+    <p id="p2"></p>
+
+    <button onclick="btn3()">Click 3</button>
+    <p id="p3"></p>
+
+    <button onclick="btn4()">Click 4</button>
+    <p id="p4"></p>
+
+
+    <script>
+        // even numbers
+        function btn1() {
+            let no = parseInt(prompt("enter number"));
+            do {
+                if (no % 2 == 0) {
+                    document.getElementById("p1").innerHTML += " " + no;
+                }
+                no++;
+            } while (no <= 100)
+        }
+
+        // numbers divisible by 5 or 10
+        function btn2() {
+            let no = parseInt(prompt("enter number"));
+            do {
+                if (no % 5 == 0 || no % 10 == 0) {
+                    document.getElementById("p2").innerHTML += " " + no;
+                }
+                no++;
+            } while (no <= 100)
+        }
+
+        //  odd numbers
+        function btn3() {
+            let no = parseInt(prompt("enter number"));
+            do {
+                if (no % 2 != 0) {
+                    document.getElementById("p3").innerHTML += " " + no;
+                }
+                no++;
+            } while (no <= 100)
+        }
+
+       
+
+    </script>
+</body>
+
+</html>

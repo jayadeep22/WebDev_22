@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+</head>
+
+<body>
+
+    <h3 id="demo1"></h3>
+    <h3 id="demo2"></h3>
+    <h3 id="demo3"></h3>
+    <h3 id="demo4"></h3>
+    <h3 id="demo5"></h3>
+
+
+
+
+
+
+    <script>
+        let hour = prompt("Enter Time: ");
+        console.log(hour);
+
+        if (hour >= 6 && hour < 12) {
+            console.log("Good Morning");
+            document.getElementById("demo4").innerHTML = "Good Morning";
+        } else if (hour >= 12 && hour < 18) {
+            console.log("Good Evening");
+            document.getElementById("demo4").innerHTML = "Good Evening";
+        } else if (hour >= 18 && hour < 24) {
+            console.log("Good Night");
+            document.getElementById("demo4").innerHTML = "Good Night";
+        } else if (hour >= 1 && hour < 6) {
+            console.log("Good Afternoon");
+            document.getElementById("demo4").innerHTML = "Good Afternoon";
+        } else {
+            console.log("Please Enter Valid Time");
+            document.getElementById("demo5").innerHTML = "Warning :- Enter Valid Time Between 1 to 24";
+        }
+
+
+        let age = parseInt(prompt("Enter Your Age:"));
+        if(age>=18){
+            document.getElementById("demo1").innerHTML = "You are Eligible for Voting";
+        }
+        else if(age<=17){
+            document.getElementById("demo2").innerHTML = "You are too Young to Vote";
+        }
+        else{
+            document.getElementById("demo3").innerHTML = "Enter Valid Age";
+        }
+
+
+        let no=parseInt(prompt("enter any number:"));
+        if(no<20){
+            console.log(no++);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #biggdiv{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+        #smalldiv{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="biggdiv">
+        <div id="smalldiv"></div><br>
+
+    </div><br><br>
+
+    <button onclick="move()">click</button>
+    <script>
+         function move(){
+            let target = document.getElementById("smalldiv");
+            pos = 0;
+
+         let x =    setInterval(anim,50);
+            function anim(){
+
+                if(pos==350)
+                {
+                    clearInterval(x)
+                }
+                else{
+                    pos++;
+                target.style.top = pos + "px";
+                target.style.left = pos + "px";
+                }
+               
+            }
+         }
+    </script>
+</body>
+</html>

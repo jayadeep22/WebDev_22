@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Using Float</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+        integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        * {
+            margin-bottom: 10px;
+        }
+
+        header {
+            height: 100px;
+            text-align: center;
+            background-color: darkslateblue;
+            color: antiquewhite;
+            padding-top: 10px;
+        }
+
+        nav {
+            background-color: darkgrey;
+            height: 60px;
+            padding-top: 10px;
+        }
+
+        ul {
+
+            list-style-type: none;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        li {
+            display: inline;
+            padding: 0 20px;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        footer {
+
+            height: 100px;
+            padding-top: 10px;
+            text-align: center;
+            background-color: rgb(182, 199, 135);
+            color: black;
+            clear: both;
+        }
+
+        section {
+            display: flex;
+        }
+
+        .one {
+
+            flex: 3;
+            margin-right: 0.4%;
+            height: 200px;
+            background-color: rgb(118, 216, 216);
+        }
+
+        .two {
+            flex: 3;
+            margin-right: 0.3%;
+            height: 200px;
+            background-color: rgb(204, 181, 132);
+
+        }
+
+        .three {
+
+            flex: 3;
+            height: 200px;
+            background-color: rgb(121, 138, 114);
+        }
+
+        .four {
+            flex: 4;
+            margin-right: 1.87%;
+
+        }
+
+        .five {
+            flex: 4;
+        }
+
+        footer {
+
+            background-image: url(/Practice_22/assets/images1/bgimg_footer.jpg);
+            height: 400px;
+            background-repeat: no-repeat;
+            display: flex;
+            clear: both;
+        }
+
+        #imagegallery {
+            display: flex;
+
+        }
+
+        /* #imagegallery img{
+            flex: 4;
+           width: 300px;
+           height: 200px;
+           margin: 10px;
+        } */
+        /* .img1{
+           flex: 4;
+           width: 300px;
+           height: 200px;
+           margin: 10px;
+        }
+        .img2{
+           flex: 4;
+           width: 300px;
+           height: 200px;
+           margin: 10px;
+        }
+        .img3{
+           flex: 4;
+           width: 300px;
+           height: 200px;
+           margin: 10px;
+        }
+        .img4{
+           flex: 4;
+           width: 300px;
+           height: 200px;
+           margin: 10px;
+        } */
+
+        .four iframe {
+            width: 100%;
+            height: 300px;
+        }
+
+        .foot1,
+        .foot2,
+        .foot3 {
+            color: white;
+            flex: 3;
+        }
+
+        .foot1 p {
+            text-align: justify;
+        }
+
+        .foot2 ul li a {
+
+            color: white;
+            display: block;
+
+        }
+
+        .foot2 {
+            color: white;
+            flex: 3;
+        }
+
+        .foot2 li {
+            display: block;
+        }
+
+        .foot2 li a {
+            color: white;
+        }
+
+        .foot3 {
+            color: white;
+            flex: 3;
+        }
+
+        .foot3 a {
+            color: white;
+        }
+
+        @media (max-width:700px) {
+            .four iframe {
+                width: fit-content !important;
+                margin-right: none !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width:700px) {
+            .five iframe {
+                width: fit-content !important;
+                margin-right: none !important;
+                height: auto;
+            }
+
+        }
+
+        @media (max-width:700px) {
+            section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nature</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="/Practice_22/forminput.html">Registration</a></li>
+            <li><a href="">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div>
+        <img src="/images/nature 2.jpg" alt="nature image" style="width:100%;height:500px;">
+    </div>
+    <section>
+        <div class="one">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officiis eius facere temporibus minima
+                ratione dignissimos a, molestias nobis deleniti. Molestiae repellendus sequi asperiores ea?</p>
+        </div>
+
+        <div class="two">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officiis eius facere temporibus minima
+                ratione dignissimos a, molestias nobis deleniti. Molestiae repellendus sequi asperiores ea?</p>
+        </div>
+
+        <div class="three">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officiis eius facere temporibus minima
+                ratione dignissimos a, molestias nobis deleniti. Molestiae repellendus sequi asperiores ea?</p>
+        </div>
+    </section>
+    <section>
+        <div class="four">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.6172662757426!2d74.24036331389077!3d16.696025188496368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1018ba29427eb%3A0xba4bc267ad1f3ce7!2siGAP%20Education%20Private%20Limited!5e0!3m2!1sen!2sin!4v1665916120824!5m2!1sen!2sin"></iframe>
+        </div>
+
+        <div class="five">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/KdjvPj1DbEs"
+                title="YouTube video player"></iframe>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div id="imagegallery">
+            <img class="img1" src="/images/nature 2.jpg" alt="nature">
+            <img class="img2" src="/images/nature 2.jpg" alt="nature">
+            <img class="img3" src="/images/nature 2.jpg" alt="nature">
+            <img class="img4" src="/images/nature 2.jpg" alt="nature">
+        </div>
+</section> -->
+
+    <footer>
+        <div class="foot1">
+            <h3>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aliquid? Cum quae dolore quidem
+                    aliquam perferendis labore nobis fugiat totam rem ab accusantium, unde omnis dolorem itaque
+                    blanditiis ratione necessitatibus?</p>
+        </div>
+        <div class="foot2">
+            <h3>Quick Links</h1>
+
+                <li><span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span><a href="about_us.html">About Us</a></li>
+
+                <li><span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span><a href="forminput.html">Registration</a></li>
+                <li> <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span><a href="contact_us.html">Contact Us</a></li>
+
+        </div>
+        <div class="foot3">
+            <h3>Contact Us</h3>
+
+            <address>
+                <i class="fa fa-address-card"></i> 85 Praed Street,<br>
+                London, W2 1NT
+            </address>
+            <address>
+                </p>
+                <i class="fa fa-envelope"></i><a href="malto:info@euro1exchange.co.uk"> info@euro1exchange.co.uk</a></p>
+                <p></p>
+                <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+447770118300"> +44 (0) 777 011 8300</a></p>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>

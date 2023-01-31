@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Method</title>
+</head>
+<body>
+
+    <script>
+        let x = 12300000;
+        let y = 123010101;
+        console.log(x + " " + y);  
+
+        let a = 0.3;
+        let b = 0.5;
+        console.log(a + b);
+
+        let no5 = "25";
+        console.log(no5);
+        console.log("type of no: " + typeof(no5));
+        let no6 = parseInt(no5);
+        console.log("type changed of no: " + typeof(no6));
+
+        let e = "25";
+        console.log("type of no: " + typeof(e));
+        let y1 = parseInt(e);
+        console.log("type changed of no: " + typeof(y1));
+        
+    //    let g =  prompt("what is your name");
+    //    console.log(g);
+
+    //    let no1,no2,addition;
+    //    no1 = parseInt(prompt("enter no1:"));
+    //    no2 = parseInt(prompt("enter no2:"));
+    //    addition = no1 + no2;
+    //    console.log("addition of two no is:" + addition);
+
+       let u = "80";
+       console.log(typeof(u));
+       let z = parseInt(u);
+       console.log(typeof(z));
+
+       let g = 9.650050;
+       console.log("exponential: " + g.toExponential(4));
+
+       let h = 9.4587;
+       console.log("toFixed : " + h);
+       console.log("toFixed : " + h.toFixed(3));
+       console.log("toFixed : " + h.toFixed(2));
+       console.log("toFixed : " + h.toFixed(1));
+       console.log("toFixed : " + h.toFixed());
+
+       let no = [10,25,45,85,96,35,25];
+       console.log(Math.min.apply(" ",no));
+       console.log(Math.max.apply(" null ",no));
+
+       let pi = 3.14159;
+       console.log(pi.toFixed(3));
+
+       let Pi = 3.1415962;
+       console.log(Pi.toPrecision(3));
+
+       let num = 186000;
+       console.log(num.toExponential()); 
+    </script>
+</body>
+</html>

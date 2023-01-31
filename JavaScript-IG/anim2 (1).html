@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+
+    <style>
+        #bigdiv {
+            height: 500px;
+            width: 500px;
+            background-color: coral;
+            position: relative;
+        }
+
+        #smalldiv1 {
+            height: 40px;   
+            width: 40px;
+            border-radius: 40%;
+            position: absolute;
+            top: 0;
+            background-color: blueviolet;
+        }
+
+        #smalldiv2 {
+            height: 40px;
+            width: 40px;
+            border-radius: 40%;
+            position: absolute;
+            right: 0;
+            background-color: chartreuse;
+
+        }
+
+        #smalldiv3 {
+            height: 40px;
+            width: 40px;
+            border-radius: 40%;
+            position: absolute;
+            bottom: 0;
+            background-color: cyan;
+        }
+
+        #smalldiv4 {
+            height: 40px;
+            width: 40px;
+            border-radius: 40%;
+            position: absolute;
+            left: 460px;
+            top: 460px;
+            background-color: darkred;
+        }
+
+        #smalldiv5 {
+            height: 40px;
+            width: 40px;
+            border-radius: 40%;
+            position: absolute;
+            left: 220px;
+            background-color: blue;
+        }
+
+        #smalldiv6 {
+            height: 40px;
+            width: 40px;
+            border-radius: 40%;
+            position: absolute;
+            left: 220px;
+            bottom: 0;
+            background-color: cornsilk;
+        }
+
+        #smalldiv7 {
+            height: 40px;
+            width: 40px;
+            border-radius: 40%;
+            position: absolute;
+            top: 230px;
+            background-color: darkslategray;
+        }
+
+        #smalldiv8 {
+            height: 40px;
+            width: 40px;
+            border-radius: 40%;
+            position: absolute;
+            right: 0;
+            top: 230px;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bigdiv">
+        <div id="smalldiv1"></div>
+        <div id="smalldiv2"></div>
+        <div id="smalldiv3"></div>
+        <div id="smalldiv4"></div>
+        <div id="smalldiv5"></div>
+        <div id="smalldiv6"></div>
+        <div id="smalldiv7"></div>
+        <div id="smalldiv8"></div>
+    </div>
+    <button onclick="move()">Click here</button>
+
+
+    <script>
+        function move() {
+            let pos1 = 0;
+
+            let a = setInterval(anim1, 2);
+            function anim1() {
+                if (pos1 == 460) {
+                    clearInterval(a);
+                }
+                else {
+                    pos1++;
+                    let target1 = document.getElementById("smalldiv1");
+                    target1.style.top = pos1 + "px";
+                    target1.style.left = pos1 + "px";
+                }
+            }
+
+            let pos2 = 460;
+            let b = setInterval(anim2, 2);
+            function anim2() {
+                if (pos2 == 0) {
+                    clearInterval(b);
+                }
+                else {
+                    pos2--;
+                    let target2 = document.getElementById("smalldiv2");
+                    target2.style.left = pos2 + "px";
+                    target2.style.bottom = pos2 + "px";
+                }
+            }
+
+            let pos3 = 460;
+            let c = setInterval(anim3, 2);
+            function anim3() {
+                if (pos3 == 0) {
+                    clearInterval(c);
+                }
+                else {
+                    pos3--;
+                    let target3 = document.getElementById("smalldiv3");
+                    target3.style.right = pos3 + "px";
+                    target3.style.top = pos3 + "px";
+                }
+            }
+
+            let pos4 = 460;
+            let d = setInterval(anim4, 2);
+            function anim4() {
+                if (pos4 == 0) {
+                    clearInterval(d);
+                }
+                else {
+                    pos4--;
+                    let target4 = document.getElementById("smalldiv4");
+                    target4.style.top = pos4 + "px";
+                    target4.style.left = pos4 + "px";
+                }
+            }
+
+            let pos5 = 0;
+            let e = setInterval(anim5, 2);
+            function anim5() {
+                if (pos5 == 460) {
+                    clearInterval(e);
+                }
+                else {
+                    pos5++;
+                    let target5 = document.getElementById("smalldiv5");
+                    target5.style.top = pos5 + "px";                }
+            }
+
+            let pos6 = 460;
+            let f = setInterval(anim6, 2);
+            function anim6() {
+                if (pos6 == 0) {
+                    clearInterval(f);
+                }
+                else {
+                    pos6--;
+                    let target6 = document.getElementById("smalldiv6");
+                    target6.style.top = pos6 + "px";                }
+            }
+
+
+            let pos7 = 460;
+            let g = setInterval(anim7,1);
+            function anim7(){
+                if(pos7==0){
+                    clearInterval(g);
+                }
+                else{
+                    pos7--;
+                    let target7 = document.getElementById("smalldiv7");
+                    target7.style.right = pos7 + "px";
+                }
+            }
+
+
+            let pos8 = 460;
+            let h = setInterval(anim8,1);
+            function anim8(){
+                if(pos8==0){
+                    clearInterval(h);
+                }
+                else{
+                    pos8--;
+                    let target8 = document.getElementById("smalldiv8");
+                    target8.style.left = pos8 + "px";
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

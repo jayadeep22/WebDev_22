@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+
+<body>
+    <button onclick="btn1()">Click 1</button>
+    <p id="demo1"></p>
+
+    <button onclick="btn2()">Click 2</button>
+    <p id="demo2"></p>
+
+    <button onclick="btn3()">Click 3</button>
+    <p id="demo3"></p>
+
+    <button onclick="btn4()">Click 4</button>
+    <p id="demo4"></p>
+
+    <button onclick="btn5()">Click 5</button>
+    <p id="demo5"></p>
+
+    <button onclick="btn6()">Click 6</button>
+    <p id="demo6"></p>
+
+    <button onclick="btn7()">Click 7</button>
+    <p id="demo7"></p>
+
+
+    <script>
+        // even numbers
+        function btn1() {
+            for (i = 0; i <= 100; i++) {
+                if (i % 2 == 0) {
+                    document.getElementById("demo1").innerHTML += " " + i;
+                    // document.writeln(" " + i);
+                }
+            }
+        }
+
+        // numbers divisible by 5 and 7
+        function btn4() {
+            for (i = 0; i <= 1000; i++) {
+                if (i % 5 == 0 && i % 7 == 0) {
+                    document.getElementById("demo4").innerHTML += " " + i;
+                }
+            }
+        }
+
+
+        // numbers divisible by 10
+        function btn5() {
+            for (i = 0; i <= 1000; i++) {
+                if (i % 10 == 0) {
+                    document.getElementById("demo5").innerHTML += " " + i;
+                }
+            }
+        }
+
+
+
+        // number is prime or not
+        function btn2() {
+            var no, i, count = 0;
+            no = parseInt(prompt("enter no:"));
+            for (i = 1; i <= no; i++) {
+                if (no % i == 0) {
+                    count++;
+                }
+            }
+            if (count == 2) {
+                document.getElementById("demo2").innerHTML = "Prime";
+                // document.write("Prime");
+            } else {
+                document.getElementById("demo2").innerHTML = "Not Prime";
+                // document.write("Not");
+            }
+        }
+
+        //    prime numbers
+        function btn6() {
+            let no1,i,no2=0;
+            no1 = parseInt(prompt("enter number"));
+            for(i=1;i<=no1;i++){
+                if(no1%i==0){
+                    no2++;
+                }
+            }
+            if(no2 == 2){
+                document.getElementById('demo6').innerHTML = "prime";
+            }
+            else{
+                document.getElementById("demo6").innerHTML = "not prime";
+            }
+        }
+
+
+        // prime numbers
+
+        function btn3() {
+            let count, no;
+            for (no = 1; no <= 100; no++) {
+                for (count = 2; count <= no; count++) {
+                    if (no % count == 0) {
+                        break;
+                    }
+                }
+                if (no == count) {
+                    document.getElementById("demo3").innerHTML += " " + no;
+                }
+            }
+        }
+
+
+        function btn7() {
+            let i, j;
+            for (i = 1; i <= 10; i++) {
+                for (j = 1; j <= 10; j++) {
+                    document.getElementById("demo7").innerHTML += " " + i * j + " ";
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

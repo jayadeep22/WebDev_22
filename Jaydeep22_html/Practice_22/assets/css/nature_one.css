@@ -1,0 +1,38 @@
+*{
+    margin-bottom: 10px;
+}
+header{
+   height: 100px;
+   text-align: center;
+   background-color: darkslateblue;
+   color: antiquewhite;
+   padding-top: 10px;
+}
+nav {
+    background-color: darkgrey;
+    height: 60px;
+    padding-top: 10px;
+}
+ul {
+  
+   list-style-type: none;
+   text-align: center;
+   text-decoration: none;
+}
+li{
+    display: inline;
+    padding: 0 20px;
+}
+li a{
+    text-decoration: none;
+}
+
+footer{
+
+    height: 100px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgb(182, 199, 135);
+    color: black;
+    clear: both;
+}

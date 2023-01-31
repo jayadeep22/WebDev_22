@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+<body>
+    <button onclick="clicked()" onblur="blur1()">click</button>
+    <button onmouseover="mouseover()" onmouseout="mouseout()">color</button>
+    <button onmouseenter="enter()" onmouseleave="leave()">enter</button>
+    <button onmouseup="up()">up</button>
+    <button onmousedown="down()">down</button>
+    <button onmousemove="move()">move</button>
+    <button onmousewheel="wheel()">wheel</button>
+    <button ondblclick="doubleclick()">doubleclick</button>
+    <button oncontextmenu="rightclick()">rightclick</button>
+
+    <script>
+        function clicked(){
+            document.body.style.backgroundColor = 'green';
+        }
+        function blur1() {
+            document.body.style.backgroundColor = 'yellow';
+
+        }
+
+        function mouseover(){
+            document.body.style.backgroundColor = "black";
+            alert("mouse over")
+        }
+
+        function mouseout(){
+            document.body.style.backgroundColor = "white";
+            alert("mouse out");
+        }
+
+        function enter(){
+             document.body.style.backgroundColor = "lavender";
+        }
+
+        function leave(){
+            document.body.style.backgroundColor = "purple";
+        }
+
+        function up(){
+            document.body.style.backgroundColor = "brown";
+        }
+
+        function down(){
+            document.body.style.backgroundColor = "teal";
+        }
+
+        function move(){
+            document.body.style.backgroundColor = "orange";
+        }
+
+        function wheel(){
+            
+            document.body.style.backgroundColor = "peru";
+        }
+
+        function doubleclick(){
+            document.body.style.backgroundColor = "chocolate";
+        }
+
+        function rightclick(){
+            document.body.style.backgroundColor = "steelblue";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="assets/css/nature_one.css">
+
+    <style>
+      .form1{
+      
+        border: 2px solid rgb(2, 9, 32);
+        padding: 20px;
+        background-color: rgb(211, 235, 192);
+       
+
+      }
+      .sub1{
+        padding: 10px;
+        background-color: rgb(169, 201, 158);
+        color: black;
+        font-size:15px;
+        font-weight:700;
+      }
+      .res1{
+        padding: 10px;
+        background-color: rgb(192, 197, 219);
+        color: black;
+        font-size:15px;
+        font-weight:700;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Nature</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="/Practice_22/about_us.html">About Us</a></li>
+        <li><a href="/Practice_22/forminput.html">Registration</a></li>
+        <li><a href="">Contact Us</a></li>
+        
+    </ul>
+</nav>
+
+
+    <div style="width: 400px; margin: auto;">
+        <form class="form1">
+            <h1>Registration Form</h1><br>
+            <label>First Name:</label>
+            <input type="text" placeholder="Enter First Name"><br><br>
+            <label>Last Name:</label>
+            <input type="text" placeholder="Enter Last  Name"><br><br>
+            <label>Gender :</label>
+            <label><input type="radio" name="Gender">Male</label>
+            <label><input type="radio" name="Gender">Female</label><br><br>
+            <label>birth Date:</label>
+            <input type="date"><br><br>
+            <label>Contact No:</label>
+            <input type="text" maxlength="10"><br><br>
+            <label>Email id:</label>
+            <input type="email"><br><br>
+            <label>Adress:</label>
+            <textarea rows="2" cols="25" placeholder="Enter Your Address"></textarea><br><br>
+            <label>Select Course:</label>
+            <select>
+                <option>--Select--</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Bootsrap</option>
+                <option>Javascript</option>
+            </select><br><br>
+            <input class="sub1" type="submit" value="Submit">
+            <input class="res1" type="reset"  value="Clear">
+        </form>
+
+    </div>
+       
+    <footer>
+      <h1>Footer</h1>
+  </footer>
+</body>
+</html>

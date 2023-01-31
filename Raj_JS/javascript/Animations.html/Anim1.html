@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation1</title>
+    <style>
+        #bigdiv1 {
+            height: 500px;
+            width: 500px;
+            background-color: coral;
+            position: relative;
+        }
+
+        #smalldiv1 {
+            height: 70px;
+            width: 70px;
+            position: absolute;
+            background-color: darkcyan;
+            border-radius: 50%;
+        }
+
+        #smalldiv2 {
+            height: 70px;
+            width: 70px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 430px;
+            border-radius: 50%;
+        }
+
+        #smalldiv3 {
+            height: 70px;
+            width: 70px;
+            background-color: chartreuse;
+            position: absolute;
+            left: 430px;
+            border-radius: 50%;
+        }
+
+        #smalldiv4 {
+            height: 70px;
+            width: 70px;
+            background-color: mediumorchid;
+            position: absolute;
+            top: 430px;
+            left: 430px;
+            border-radius: 50%;
+        }
+
+        #smalldiv5 {
+            height: 70px;
+            width: 70px;
+            background-color: fuchsia;
+            position: absolute;
+            top: 220px;
+            border-radius: 50%;
+        }
+
+        #smalldiv6 {
+            height: 70px;
+            width: 70px;
+            background-color: orange;
+            position: absolute;
+            left: 430px;
+            top: 220px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bigdiv1">
+        <div id="smalldiv1"></div>
+        <div id="smalldiv2"></div>
+        <div id="smalldiv3"></div>
+        <div id="smalldiv4"></div>
+
+        <div id="smalldiv5"></div>
+        <div id="smalldiv6"></div>
+    </div>
+
+    <button onclick="clicked1()">Click Here</button>
+
+    <script>
+        function clicked1() {
+            pos1 = 0;
+
+            let a = setInterval(anim, 5);
+            function anim() {
+                if (pos1 == 430) {
+                    clearInterval(a);
+                }
+                else {
+                    pos1++;
+                    let target = document.getElementById("smalldiv1");
+                    target.style.top = pos1 + "px";
+                    target.style.left = pos1 + "px";
+                }
+            }
+
+
+            pos2 = 430;
+            let b = setInterval(anim2, 5);
+            function anim2() {
+                if (pos2 == 0) {
+                    clearInterval(b);
+                }
+                else {
+                    pos2--;
+                    let target1 = document.getElementById("smalldiv2");
+                    target1.style.top = pos2 + "px";
+                    target1.style.right = pos2 + "px";
+                }
+            }
+
+
+
+
+            pos3 = 430;
+            let c = setInterval(anim3, 5);
+            function anim3() {
+                if (pos3 == 0) {
+                    clearInterval(c);
+                }
+                else {
+                    pos3--;
+                    let target2 = document.getElementById("smalldiv3");
+                    target2.style.bottom = pos3 + "px";
+                    target2.style.left = pos3 + "px";
+                }
+            }
+
+
+
+            pos4 = 430;
+            let d = setInterval(anim4, 5);
+            function anim4() {
+                if (pos4 == 0) {
+                    clearInterval(d);
+                }
+                else {
+                    pos4--;
+                    let target3 = document.getElementById("smalldiv4");
+                    target3.style.top = pos4 + "px";
+                    target3.style.left = pos4 + "px";
+                }
+            }
+
+
+            pos5 = 430;
+            let e = setInterval(anim5, 5);
+            function anim5() {
+                if (pos5 == 0) {
+                    clearInterval(e);
+                }
+                else {
+                    pos5--;
+                    let target4 = document.getElementById("smalldiv5");
+                    target4.style.right = pos5 + "px";
+                }
+            }
+
+
+            pos6 = 430;
+            let f = setInterval(anim6,5);
+            function anim6() {
+                if(pos6==0){
+                    clearInterval(f);
+                }
+                else{
+                    pos6--;
+                    let target5 = document.getElementById("smalldiv6");
+                    target5.style.left = pos6 + "px";
+                }
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

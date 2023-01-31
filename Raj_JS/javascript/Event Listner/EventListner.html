@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+    <style>
+        #div1{
+            height: 400px;
+            width: 400px;
+            background-color: brown;
+            color: aquamarine;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Click here</button><br><br>
+    <button id="btn2">Click here</button><br><br>
+    <button id="btn3">Click here</button><br><br>
+
+    <p id="demo1">p1</p>
+    <p id="demo2">p2</p>
+    <p id="demo3">p3</p>
+   
+    <div id="div1">
+        <p id="demo4">p4</p>
+    </div>
+    <button onclick="btn4()">Click here</button><br><br>
+
+    <script>
+        // btn1
+        document.getElementById("btn1").addEventListener("click",page1);
+        function page1(){
+            let date = new Date();
+            document.getElementById("demo1").innerHTML = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+            setInterval(page1,1000);
+        }
+
+
+        // btn2
+        document.getElementById("btn2").addEventListener("mouseover",page2);
+        function page2(){
+            document.getElementById("demo2").innerHTML = Date();
+            setInterval(page2,1000);
+        }
+
+
+        // btn3
+        document.getElementById("btn3").addEventListener("mouseover",page3);
+        document.getElementById("btn3").addEventListener("mouseleave",page4);
+        document.getElementById("btn3").addEventListener("click",page5);
+
+        function page3(){
+            document.getElementById("demo3").innerHTML += "mouse over ";   
+        }
+        function page4(){
+            document.getElementById("demo3").innerHTML += "mouse out ";
+        }
+        function page5(){
+            document.getElementById("demo3").innerHTML += "clicked ";
+        }
+
+
+        // btn4
+        document.getElementById("div1").addEventListener("mousemove",page6);
+        function page6(){
+            document.getElementById("demo4").innerHTML = Math.random();
+        }
+        function btn4(){
+            document.getElementById("div1").removeEventListener("mousemove",page6);
+        }
+
+    </script>
+    
+</body>
+</html>

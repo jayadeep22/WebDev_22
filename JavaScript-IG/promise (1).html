@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    //    let married = true;
+
+    //     function prom(married){
+    //         return new Promise(function(resolve,reject){
+    //             console.log("fetching data please wait");
+    //             setTimeout(() => {
+    //                 if(married)
+    //             {
+    //                 resolve("happy");
+    //             }
+    //             else{
+    //                 reject("unhappy");
+    //             }
+    //             }, 3000);
+    //         })
+    //     }
+    //     let onfulfilment = (result)=>{
+    //         console.log(result);
+    //     }
+    //     let rejection1 = (error)=>{
+    //         console.log(error);
+    //     };
+    //     prom(true).then(onfulfilment).catch(rejection);
+
+
+
+
+    let age = parseInt(prompt("enter age:"));
+    function vote(age) {
+      return new Promise(function (resolve, reject) {
+
+        console.log("fetching result please wait");
+        setTimeout(() => {
+
+          if (age >= 18) {
+            resolve("eligible for voting");
+          }
+          else {
+            reject("not eligible");
+          }
+
+        }, 3000);
+
+      })
+    };
+    let success = (result) => {
+      console.log(result);
+    };
+    let rejection2 = (error) => {
+      console.log(error);
+    };
+
+    vote(age).then(success).catch(rejection2);
+
+
+
+
+
+// function prom(some) {
+//   document.getElementById("demo").innerHTML = some;
+// }
+
+// function Calculator(a, b) {
+//   let sum = a + b;
+//   return sum;
+// }
+
+// let result = Calculator(5,5);
+// console.log(result);
+
+  </script>
+</body>
+
+</html>

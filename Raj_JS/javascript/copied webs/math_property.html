@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clickedme()">click</button>
+    <p id="demo">para</p>
+  <script>
+    let a = Math.E;
+    console.log(a);
+    let b = Math.PI;
+    console.log(b);
+    let c = Math.SQRT2;
+    console.log(c);
+    d = Math.SQRT1_2;
+    console.log(d);
+    let e = Math.LN2;
+    console.log(e);
+    let f = Math.LN10;
+    console.log(f);
+
+    let g = Math.LOG2E;
+    console.log(g);
+    let h = Math.LOG10E;
+    console.log(h);
+
+    let x = Math.round(-4.6);
+    console.log(x);
+
+    let y = Math.ceil(-5.6);
+    console.log(y);
+
+    let z = Math.floor(-5.9);
+    console.log(z);
+
+    let k = Math.trunc(-5.8);
+    console.log(k);
+
+    let l = Math.sign(-5.8);
+    console.log(l);
+
+    let n = Math.pow(5,5);
+    console.log(n);
+
+    let v = Math.sqrt(64);
+    console.log(v);
+
+    let w = Math.abs(-1.3);
+    console.log(w);
+
+    let r = Math.max(10,20,30,40,50,-20);
+    console.log(r);
+
+    let t = Math.random();
+    console.log(t);
+
+    let i = Math.floor(Math.random()*10);
+    console.log(i);
+
+    function clickedme(){
+        function int(min,max){
+            return Math.floor(Math.random()*(max-min) + max);
+           
+        }
+        document.getElementById("demo").innerHTML = int(0,10);
+    }
+   
+          
+    let s = Boolean(10>15);
+    console.log(s);
+   
+
+    
+  </script>  
+</body>
+</html>

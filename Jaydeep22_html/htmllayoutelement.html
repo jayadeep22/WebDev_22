@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout Element</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            background-color: aqua;
+            text-align: center;
+            height: 100px;
+            padding-top: 10px;
+        }
+        nav{
+            background-color: cadetblue;
+            height: 60px;
+            padding-top: 10px;
+        }
+        ul{
+            list-style-type: none;
+            text-align: center;
+        }
+        li{
+            display: inline;
+            padding: 0 20px;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        section{
+            background-color: violet;
+            height: 400px;
+        }
+        article{
+            background-color: tomato;
+            height: 400px;
+        }
+        aside{
+            background-color: burlywood;
+            height: 400px;
+        }
+        div{
+            background-color: chocolate;
+            height: 400px;
+        }
+        footer{
+            background-color: black;
+            height: 100px;
+            color: white;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Header Layout Element</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="aboutus">
+        <h2 style="text-align: center;">Section Layout Element - About Us</h2>
+        
+    </section>
+    <article id="services">
+        <h2  style="text-align: center;">Article Layout Element - Services</h2>
+    </article>
+    <aside id="gallery">
+        <h2  style="text-align: center;">Aside Layout Element - Gallery</h2>
+    </aside>
+    <div id="contactus">
+        <h2  style="text-align: center;">Div Layout Element - Container - Contact Us</h2>
+    </div>
+    <footer>
+        <h2  style="text-align: center;">Footer Layout Element</h2>
+    </footer>
+</body>
+</html>

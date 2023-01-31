@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = new Date("2022-11-25T15:12:10");
+        console.log(x);
+       
+        console.log( x.getFullYear());
+        console.log( x.getMonth());
+        console.log( x.getDate());
+        console.log( x.getHours());
+        console.log( x.getMinutes());
+        console.log( x.getSeconds());
+        console.log( x.getMilliseconds());
+        console.log( x.getTime());
+
+        let d = new Date("2022-12-17");
+        console.log(d.getDay());
+
+
+        let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        let a = new Date("2022-12-17");
+
+        let f = days[a.getDay()];
+        console.log(f);
+
+        let h = Date.now();
+        console.log(h);
+
+        // Calculate milliseconds in a year
+        //1000 ms = 1sec
+// const minute = 1000 * 60;  1000ms*60=1 min
+// const hour = minute * 60;
+// const day = hour * 24;
+// const year = day * 365;
+
+// Divide Date.now() with a year
+let years = Math.round(Date.now() / year);         //round 52.58
+document.getElementById("demo").innerHTML = years;   //53 year.
+
+
+    </script>
+</body>
+</html>

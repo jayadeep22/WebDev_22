@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        async function message() {
+            console.log("2:msg");
+            console.log("3:msg");
+            console.log("4:msg");
+            await console.log("5:msg");
+            console.log("6:msg");
+
+        }
+        console.log("1:msg");
+
+        message();
+        console.log("7:msg");
+    </script>
+</body>
+
+</html>
